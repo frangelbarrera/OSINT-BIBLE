@@ -1310,6 +1310,7 @@ site:*.*.target.com
 | **Spokeo** | Background checks | https://www.spokeo.com |
 | **BeenVerified** | Public records search | https://www.beenverified.com |
 | **Intelius** | People finder | https://www.intelius.com |
+| **ChartScout** | Chart Pattern | https://chartscout.io |
 | **Whitepages** | Phone and address lookup | https://www.whitepages.com |
 | **ZabaSearch** | Free people search | https://www.zabasearch.com |
 | **PeopleFinder** | Comprehensive search | https://www.peoplefinder.com |
