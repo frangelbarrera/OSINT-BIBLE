@@ -554,6 +554,9 @@ exiftool -all= foto_sanitizada.jpg
 | Subdomains | SubdomainRadar | `https://www.subdomainradar.io` |
 | Historical DNS | DNSTrails | `https://dnstrails.com/` |
 | Historical DNS | DNS History | `http://dnshistory.org` |
+| WHOIS & Domain History | WhoisFreaks | `https://whoisfreaks.com` |
+| IP Geolocation & ASN Intelligence | ipgeolocation.io | `https://ipgeolocation.io` |
+| Unified WHOIS, IP & Domain API | APIFreaks | `https://apifreaks.com` |
 | Reputation | Talos | `https://www.talosintelligence.com/` |
 | Scan | Binary Defense | `https://www.binarydefense.com/banlist.txt` |
 | BGP Ranking | CIRCL BGP | `https://bgpranking.circl.lu` |
@@ -1337,6 +1340,8 @@ site:*.*.target.com
 | **OpenCorporates** | Global company registry | https://opencorporates.com |
 | **Company House** | UK company registry | https://find-and-update.company-information.service.gov.uk |
 | **Bloomberg** | Financial data | https://www.bloomberg.com |
+| Currency & FX Data for Financial Investigations | CurrencyFreaks | `https://currencyfreaks.com` |
+| Commodity Price Tracking for Supply Chain Research | CommodityPriceAPI | `https://commoditypriceapi.com` |
 
 ---
 
