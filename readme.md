@@ -266,6 +266,7 @@ graph TD
 | Network analysis | [Network Tool](https://networktool.org) | RT graph |
 | Deleted tweets | [Deleted Tweet Finder](https://deletedtweetfinder.com) | Aggregated API |
 | Sentiment | [Sentiment140](http://sentiment140.com) | CSV bulk |
+| Full API access | [Xquik](https://xquik.com) | 122 endpoints, search/user/post/monitor. API key, $0.00015/read |
 
 ### 5.2 Instagram
 | Task | Tool | Risk |
