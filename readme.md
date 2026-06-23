@@ -646,6 +646,8 @@ exiftool -all= foto_sanitizada.jpg
 | Certs | Certs | `https://certs.io` |
 | CastrickClues | CastrickClues | `https://castrickclues.com` |
 | TheWebCo | TheWebCo | `https://thewebco.ai` |
+| WHOIS & Domain History | WhoisFreaks | `https://whoisfreaks.com` |
+| IP Geolocation & Threat Intel | ipgeolocation.io | `https://ipgeolocation.io` |
 
 ### 7.1 Google Dorks – Domains
 ```
