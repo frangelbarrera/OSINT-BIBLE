@@ -960,6 +960,7 @@ h8mail -t targets.txt -bc local_breach_folder/ --power-all
 | **FlightRadar24** | Live tracking | https://www.flightradar24.com |
 | **ADS-B Exchange** | No military filters | https://globe.adsbexchange.com |
 | **FlightAware** | Flight history | https://flightaware.com |
+| **Phantom Tide** | Restricted airspace, maritime, and incident map | https://phantom.labs.jamessawyer.co.uk |
 | **PiAware (Raspberry Pi)** | Own ADS-B receiver | https://flightaware.com/adsb/piaware |
 
 **Setup of homemade ADS-B receiver:**
