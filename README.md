@@ -1347,7 +1347,7 @@ site:*.*.target.com
 
 ## 🤝 Contribute
 1. Fork ➜ 2. Branch `new-tool` ➜ 3. PR with tested URL (screenshot mandatory)  
-Read [CONTRIBUIR.md](CONTRIBUTING.md) before.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before.
 
 ---
 
