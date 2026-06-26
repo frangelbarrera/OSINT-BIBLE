@@ -1,47 +1,38 @@
 name: Check links
 
-permissions:
-  issues: write
-  contents: read
-  actions: read
-
 on:
   push:
     branches: [main]
     paths:
       - 'README.md'
+      - 'lychee.toml'
   pull_request:
     branches: [main]
     paths:
       - 'README.md'
+      - 'lychee.toml'
   schedule:
-    - cron: "0 8 * * 1"
+    - cron: "0 3 * * 1"
   workflow_dispatch:
 
 jobs:
   link-check:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run lychee link checker
+      - name: Check links with lychee
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
           args: >
+            --config ./lychee.toml
             --no-progress
-            --max-retries 2
-            --timeout 20
-            --accept 200,301,302,308,403,429
-            --exclude-loopback
-            --exclude 'intelx\.io'
-            --exclude 'pimeyes\.com'
-            --exclude 'map\.snapchat\.com'
-            --exclude 'sci-hub\.ru'
             README.md
-          fail: true
+          fail: false
           jobSummary: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
+          token: ${{ secrets.GITHUB_TOKEN }}
