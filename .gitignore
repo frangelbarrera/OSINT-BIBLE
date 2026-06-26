@@ -1,0 +1,36 @@
+# OSINT-BIBLE .gitignore
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Temporary files
+*.tmp
+*.bak
+*.ps1
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
