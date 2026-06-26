@@ -1,5 +1,10 @@
 name: Check links
 
+permissions:
+  issues: write
+  contents: read
+  actions: read
+
 on:
   push:
     branches: [main]
@@ -45,11 +50,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Report summary
-        if: always()
-        run: |
-          echo "::notice::Lychee link check complete. Status: ${{ job.status }}"
-          if [ -f lychee/out.md ]; then
-            echo "### Broken links found" >> $GITHUB_STEP_SUMMARY
-            cat lychee/out.md >> $GITHUB_STEP_SUMMARY
-          fi
+
