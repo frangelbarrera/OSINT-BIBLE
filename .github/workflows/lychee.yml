@@ -1,0 +1,55 @@
+name: Check links
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'README.md'
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: lychee-${{ github.sha }}
+          restore-keys: lychee-
+
+      - name: Run lychee link checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --no-progress
+            --max-retries 2
+            --timeout 20
+            --accept 200,301,302,308,403,429
+            --exclude-loopback
+            --exclude-mail
+            --cache
+            --max-cache-age 1d
+            README.md
+          fail: true
+          jobSummary: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Report summary
+        if: always()
+        run: |
+          echo "::notice::Lychee link check complete. Status: ${{ job.status }}"
+          if [ -f lychee/out.md ]; then
+            echo "### Broken links found" >> $GITHUB_STEP_SUMMARY
+            cat lychee/out.md >> $GITHUB_STEP_SUMMARY
+          fi
