@@ -742,6 +742,33 @@ status: draft # draft | reviewed | delivered
 
 ## 12. Extra Resources
 ### Free Books
+- [Open Source Intelligence Techniques — Michael Bazzell](https://inteltechniques.com/) — Official site with book updates, podcast & tools (current edition available on Amazon)
+- [Bellingcat Resources](https://www.bellingcat.com/resources/) — Free guides, case studies & methodology articles
+- [Bellingcat Online Investigation Toolkit](https://www.bellingcat.com/toolkit/) — Live, searchable toolkit maintained by Bellingcat
+- [SANS Reading Room — OSINT](https://www.sans.org/reading-room/whitepapers/OSINT/) — Peer-reviewed whitepapers (free with registration)
+- [SANS Reading Room — Forensics](https://www.sans.org/reading-room/whitepapers/forensics/) — DFIR whitepapers, free
+- [SANS SEC497 OSINT Course](https://www.sans.org/cyber-security-courses/open-source-intelligence-gathering/) — Course outline, free sample content
+- [NIST SP 800-150 — Guide to Cyber Threat Information Sharing](https://csrc.nist.gov/pubs/sp/800/150/final) — Official US gov PDF, free
+- [ENISA Threat Landscape 2024](https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024) — Full EU report, free PDF
+- [UK NCSC Threat Reports](https://www.ncsc.gov.uk/section/keep-up-to-date/threat-reports) — UK government cyber threat reports
+- [INTERPOL Cybercrime Reports](https://www.interpol.int/Crimes/Cybercrime) — Official INTERPOL publications hub
+- [Citizen Lab Publications](https://citizenlab.ca/publications/) — Academic research on digital threats, free PDFs
+- [RAND Open Source Intelligence Research](https://www.rand.org/topics/open-source-intelligence.html) — Peer-reviewed RAND papers
+- [CSIS Strategic Technologies Program](https://www.csis.org/programs/strategic-technologies-program) — Think-tank reports on tech & security
+- [arXiv Cryptography & Security](https://arxiv.org/list/cs.CR/recent) — Academic preprints, fully free
+- [FIRST.org Best Practices Guides](https://www.first.org/resources/guides) — CSIRT best-practice guides
+- [MITRE ATT&CK Resources](https://attack.mitre.org/resources/) — Framework docs, FAQs, training
+- [Trace Labs Resources](https://www.tracelabs.org/resources) — Missing persons OSINT CTF methodology
+- [OSINT Dojo](https://www.osintdojo.com/) — Free daily challenges & training paths
+- [OSINT Framework](https://osintframework.com/) — Live searchable tree of OSINT tools
+- [Awesome OSINT (jivoi)](https://github.com/jivoi/awesome-osint) — Curated mega-list, GitHub
+- [OSINT Collection (Ph055a)](https://github.com/Ph055a/OSINT_Collection) — Curated free & actionable resources
+- [INCIBE-CERT Blog](https://www.incibe-cert.es/blog) — Spanish cybersecurity articles (free)
+- [The DFIR Report](https://thedfirreport.com/) — Real-world intrusion case studies, free
+- [Krebs on Security](https://krebsonsecurity.com/) — Investigative cybersecurity journalism
+- [Cisco Talos Blog](https://blog.talosintelligence.com/) — Daily threat intel blog
+- [EFF Surveillance Self-Defense](https://ssd.eff.org/) — Free multilingual guides on privacy & OPSEC
+- [Pwn.college](https://pwn.college/) — Free ASU-hosted security course platform
 
 ### Courses / Certifications
 - [SEINT (SANS 487)](https://sans.org)
