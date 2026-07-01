@@ -761,20 +761,27 @@ status: draft # draft | reviewed | delivered
 |---|---|---|---|
 | **anonchatgpt** | Anonymous ChatGPT client | https://anonchatgpt.com | No account needed |
 | **ai-toolkit** | Essential AI toolkit for journalists | https://huggingface.co/spaces/JournalistsonHF/ai-toolkit | Free and open-source |
-| **Decktopus** | Professional presentations | https://www.decktopus.com/ | Create in minutes |
-| **Monica** | ChatGPT copilot in Chrome | https://monica.im/ | Summarize, translate, define |
-| **Poised** | Communication coach | https://www.poised.com/ | Real-time feedback |
-| **StockimgAI** | AI image creation | https://stockimg.ai/ | Logos, wallpapers, covers |
 | **ChatPDF** | Ask questions to PDFs | https://www.chatpdf.com/ | Simple and free |
-| **SheetplusAI** | Excel formulas with AI | https://sheetplus.ai/ | Save 80% time |
-| **10web** | AI website builder | https://10web.io/ | Fill form to build |
-| **BabelX** | Multilingual OSINT platform with AI | https://www.babelstreet.com | Text analysis in 200+ languages |
+| **Monica** | ChatGPT copilot in Chrome | https://monica.im/ | Summarize, translate |
+| **BabelX** | Multilingual OSINT platform | https://www.babelstreet.com | 200+ languages |
 | **Fivecast** | Predictive analysis with ML | https://www.fivecast.com | Real-time threat detection |
 | **HyperVerge** | Deepfake detection | https://hyperverge.co | AI biometric verification |
 | **ShadowDragon** | Social Darkint with AI | https://shadowdragon.io | Behavior analysis |
-| **Talkwalker** | Media monitoring with AI | https://www.talkwalker.com | Advanced sentiment analysis |
-| **DorkGPT** | AI dork generator | https://www.dorkgpt.com | Automatically creates Google dorks |
-| **SearchDorks** | Dorks for multiple engines | https://kriztalz.sh/search-dorks | FOFA, Shodan, Censys, ZoomEye |
+| **Talkwalker** | Media monitoring with AI | https://www.talkwalker.com | Sentiment analysis |
+| **DorkGPT** | AI dork generator | https://www.dorkgpt.com | Auto-creates Google dorks |
+| **SearchDorks** | Dorks for multiple engines | https://kriztalz.sh/search-dorks | FOFA, Shodan, Censys |
+| **Sensity AI** | Deepfake detection | https://sensity.ai | Professional |
+| **Factinsect** | AI fact-checking | https://factinsect.com | Free |
+| **Full Fact** | AI fact-checking (UK) | https://fullfact.org | Free |
+| **Logically** | AI disinfo detection | https://logically.com | Free tier |
+
+### 13.1 Curated AI directories (cross-references)
+| Directory | Coverage | URL |
+|---|---|---|
+| **Artificial-Intelligence-Universe** | 800+ AI tools | https://github.com/frangelbarrera/Artificial-Intelligence-Universe |
+| **awesome-ai-agents** | 132 AI agents, 22 categories | https://github.com/frangelbarrera/awesome-ai-agents |
+| **Awesome-Hacking-with-AI** | AI-powered offensive security | https://github.com/frangelbarrera/Awesome-Hacking-with-AI |
+| **osint-agent-skills** | MCP server for OSINT agents | https://github.com/frangelbarrera/osint-agent-skills |
 
 ---
 
@@ -1294,6 +1301,12 @@ site:*.*.target.com
 | **MalShare** | Malware repository | http://www.malshare.com |
 | **VirusShare** | Sample sharing | https://virusshare.com |
 | **Malware Domain List** | Malicious domains | https://www.malwarepatrol.net |
+| **AlienVault OTX** | Community threat intel | https://otx.alienvault.com |
+| **IBM X-Force** | Threat exchange | https://exchange.xforce.ibmcloud.com |
+| **Recorded Future** | Commercial feed (free blog) | https://www.recordedfuture.com |
+| **Microsoft Threat Intelligence** | MS-curated | https://www.microsoft.com/en-us/wdsi |
+| **CISA Known Exploited Vulnerabilities** | KEV catalog | https://www.cisa.gov/known-exploited-vulnerabilities-catalog |
+| **Vulnrichment** | CISA enriched CVEs | https://github.com/cisagov/vulnrichment |
 
 ### 33.2 Phishing & Fraud Feeds
 | Feed | Type | URL |
@@ -1301,6 +1314,12 @@ site:*.*.target.com
 | **PhishTank** | Phishing URLs | https://www.phishtank.com |
 | **OpenPhish** | Phishing URLs | https://openphish.com |
 | **FraudGuard** | Fraud intelligence | https://fraudguard.io |
+| **HaveIBeenPwned** | Breach notification | https://haveibeenpwned.com |
+| **DeHashed** | Breach search | https://dehashed.com |
+| **IntelligenceX** | Dark web + leaks | https://intelx.io |
+| **LeakCheck** | Real-time breach | https://leakcheck.io |
+| **Snusbase** | Recent breaches | https://snusbase.com |
+| **Hudson Rock** | Infostealer intel | https://www.hudsonrock.com |
 
 ### 33.3 IP & Domain Reputation
 | Feed | Type | URL |
@@ -1347,7 +1366,19 @@ site:*.*.target.com
 | **Claroty** | OT security (vendor) | https://claroty.com |
 | **Nozomi Networks** | OT security (vendor) | https://www.nozominetworks.com |
 
-### 34.3 Protocol-specific Dorks (Shodan)
+### 34.3 Notable ICS Incidents (Case Studies)
+| Year | Incident | Target | Lesson |
+|---|---|---|---|
+| 2010 | Stuxnet | Natanz uranium enrichment (IR) | First digital weapon, S7 PLC reprogramming |
+| 2015 | BlackEnergy | Ukraine power grid | First confirmed cyber-physical blackout |
+| 2016 | Industroyer/CrashOverride | Ukraine power grid | Automated ICS protocol abuse |
+| 2017 | TRITON/TRISIS | Saudi Petrochemical (SIS) | First attack on Safety Instrumented Systems |
+| 2021 | Colonial Pipeline | US fuel pipeline (IT-side) | Ransomware OT impact without direct compromise |
+| 2022 | Industroyer2 | Ukraine energy sector | Modular ICS malware evolution |
+
+Full case studies: https://github.com/frangelbarrera/ICS-Cybersecurity-Audit/tree/main/docs/case-studies
+
+### 34.4 Protocol-specific Dorks (Shodan)
 ```
 port:502 country:DE        # Modbus
 port:102 country:ES        # S7Comm
@@ -1380,7 +1411,25 @@ port:4840                  # OPC UA
 | **Fetch MCP** | Web fetcher | https://github.com/Anthropic/modelcontextprotocol-servers |
 | **SQLite MCP** | Local DB | https://github.com/Anthropic/modelcontextprotocol-servers |
 
-### 35.3 Quick Start (Claude Code)
+### 35.3 Agent Frameworks for OSINT Orchestration
+| Framework | Language | URL | Highlight |
+|---|---|---|---|
+| **AutoGPT** | Python | https://github.com/Significant-Gravitas/AutoGPT | Autonomous goal-driven agents |
+| **CrewAI** | Python | https://github.com/crewAIInc/crewAI | Role-based multi-agent |
+| **LangGraph** | Python | https://github.com/langchain-ai/langgraph | Stateful agent graphs |
+| **n8n** | TypeScript | https://n8n.io | Visual workflow + AI nodes |
+| **Dify** | Python | https://dify.ai | Open-source LLM app platform |
+| **secure-agent-orchestrator** (author's) | Python | https://github.com/frangelbarrera/secure-agent-orchestrator | Lightweight SOAR for distributed security agents |
+
+### 35.4 Local & Sovereign LLMs (OPSEC for sensitive investigations)
+| Tool | Type | URL |
+|---|---|---|
+| **Ollama** | Local LLM runner | https://ollama.com |
+| **LM Studio** | Desktop GUI | https://lmstudio.ai |
+| **vLLM** | Production server | https://github.com/vllm-project/vllm |
+| **Jan** | Offline assistant | https://jan.ai |
+
+### 35.5 Quick Start (Claude Code)
 ```bash
 # 1. Clone the skills repo
 git clone https://github.com/frangelbarrera/osint-agent-skills.git
