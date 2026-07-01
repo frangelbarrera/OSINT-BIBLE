@@ -604,6 +604,7 @@ site:*.target.com intext:"confidential"
 | Need | Solution | URL |
 |---|---|---|
 | Search .onion | [Ahmia](https://ahmia.fi) | clean index |
+| IOC aggregation | DeepTrawl (author's) | `https://github.com/frangelbarrera/deepweb-leak-search` |
 | Check if data leaked | [HaveIBeenPwned](https://haveibeenpwned.com) | API |
 | Markets | DarkOwl (paid) | — |
 | Credentials | [DeHashed](https://dehashed.com) (freemium) | — |
@@ -1062,6 +1063,7 @@ masscan: ~5 seconds (less detail)
 | **Dark.fail** | Verified directory | https://dark.fail | Tor Browser |
 | **Torch** | Old searcher | (only .onion) | Tor Browser |
 | **DarkDump** | Onion scraper | https://github.com/josh0xA/darkdump | Python + Tor |
+| **DeepTrawl** | Tor-routed IOC aggregator + BTC/XMR wallet extraction | https://github.com/frangelbarrera/deepweb-leak-search | Python + Tor + PostgreSQL |
 
 **Dark Web OPSEC:**
 ```
@@ -1081,11 +1083,13 @@ masscan: ~5 seconds (less detail)
 
 | Framework | Language | URL | Strength |
 |---|---|---|---|
+| **Abster Intelligence** | TypeScript / Next.js | https://github.com/frangelbarrera/Abster-Intelligence | Local-first, graph engine, BYOK-LLM, privacy-first |
 | **Ubikron** | Browser Ext | https://ubikron.com | AI-powered case management & entity extraction |
 | **SpiderFoot** | Python | https://github.com/smicallef/spiderfoot | Total automation |
 | **Recon-ng** | Python | https://github.com/lanmaster53/recon-ng | Modular |
 | **theHarvester** | Python | https://github.com/laramies/theHarvester | Email/subdomain |
 | **Maltego** | Java | https://www.maltego.com | Visualization |
+| **SentinelScope** | Python | https://github.com/frangelbarrera/sentinelscope | Lightweight Recon-ng alternative, modular |
 
 **SpiderFoot setup:**
 ```bash
@@ -1323,34 +1327,82 @@ site:*.*.target.com
 ---
 
 ## 34. ICS/OT & Critical-Infrastructure OSINT
+
 **OSINT for industrial control systems, SCADA, and critical infrastructure:**
 
+### 34.1 Methodology & Frameworks
 | Resource | Type | URL |
 |---|---|---|
-| ICS-Cybersecurity-Audit (author's) | 5-phase audit methodology, IEC 62443 / NIST 800-82 | https://github.com/frangelbarrera/ICS-Cybersecurity-Audit |
-| IndustrialScanner-Lite (author's) | Modbus/S7Comm/DNP3 PCAP analyzer | https://github.com/frangelbarrera/IndustrialScanner-Lite |
-| Shodan ICS filters | ICS device search | https://www.shodan.io/search?query=port%3A502 |
-| CISA ICS Advisories | Vulnerability advisories | https://www.cisa.gov/news-events/cybersecurity-advisories |
-| ICS-CERT | US-CERT industrial alerts | https://us-cert.cisa.gov/ics |
-| ATT&CK for ICS | MITRE matrix | https://attack.mitre.org/matrices/ics |
-| RiskVisibility | OT visibility | https://www.riskvisibility.com |
-| Claroty | OT security (vendor) | https://claroty.com |
-| Nozomi | OT security (vendor) | https://www.nozominetworks.com |
+| **ICS-Cybersecurity-Audit** (author's) | 5-phase audit methodology, IEC 62443 / NIST 800-82 | https://github.com/frangelbarrera/ICS-Cybersecurity-Audit |
+| **MITRE ATT&CK for ICS** | Tactics & techniques matrix | https://attack.mitre.org/matrices/ics |
+| **CISA ICS Advisories** | Vulnerability advisories | https://www.cisa.gov/news-events/cybersecurity-advisories |
+| **ICS-CERT** | US-CERT industrial alerts | https://us-cert.cisa.gov/ics |
 
+### 34.2 Scanners & Tools
+| Tool | Function | URL |
+|---|---|---|
+| **IndustrialScanner-Lite** (author's) | Modbus/S7Comm/DNP3 PCAP analyzer | https://github.com/frangelbarrera/IndustrialScanner-Lite |
+| **Shodan ICS filters** | ICS device search | https://www.shodan.io/search?query=port%3A502 |
+| **Censys ICS** | ICS device search | https://search.censys.io/search?resource=hosts&q=tags%3A%22ics%22 |
+| **Claroty** | OT security (vendor) | https://claroty.com |
+| **Nozomi Networks** | OT security (vendor) | https://www.nozominetworks.com |
+
+### 34.3 Protocol-specific Dorks (Shodan)
+```
+port:502 country:DE        # Modbus
+port:102 country:ES        # S7Comm
+port:20000                 # DNP3
+port:47808                 # BACnet
+port:4840                  # OPC UA
+"Schneider Electric"       # Quantum PLCs
+"Siemens" port:102         # S7 devices
+```
 ---
 
-## 35. AI Agent Skills & MCP Servers for OSINT
-**Run OSINT workflows inside Claude Code, Cursor, Ollama, or any MCP client:**
+## 35. AI Agent Skills & MCP
 
+**Run OSINT workflows inside Claude Code, Cursor, Ollama, or any MCP-compatible client:**
+
+### 35.1 MCP Servers & Skill Packs
 | Resource | Type | URL |
 |---|---|---|
-| osint-agent-skills (author's) | 22 MCP tools + 295-line system prompt + 9 pivot playbooks | https://github.com/frangelbarrera/osint-agent-skills |
-| MCP Server Finder | Directory | https://glama.ai/mcp/servers |
-| PulseMCP | Directory | https://www.pulsemcp.com |
-| Shodan MCP | Shodan via MCP | https://github.com/BeehiveInnovations/shodan-mcp |
-| VirusTotal MCP | VT via MCP | https://github.com/burningion/online-ophelia |
-| awesome-mcp-servers | Curated list | https://github.com/punkpeye/awesome-mcp-servers |
+| **osint-agent-skills** (author's) | 22 MCP tools + 295-line system prompt + 9 pivot playbooks | https://github.com/frangelbarrera/osint-agent-skills |
+| **PulseMCP** | MCP server directory | https://www.pulsemcp.com |
+| **MCP Server Finder (Glama)** | Directory | https://glama.ai/mcp/servers |
+| **awesome-mcp-servers** | Curated list | https://github.com/punkpeye/awesome-mcp-servers |
 
+### 35.2 MCP Servers for Specific OSINT Tools
+| MCP Server | Wraps | URL |
+|---|---|---|
+| **Shodan MCP** | Shodan API | https://github.com/BeehiveInnovations/shodan-mcp |
+| **VirusTotal MCP** | VT API | https://github.com/burningion/online-ophelia |
+| **Brave Search MCP** | Brave Search | https://github.com/Anthropic/modelcontextprotocol-servers |
+| **Fetch MCP** | Web fetcher | https://github.com/Anthropic/modelcontextprotocol-servers |
+| **SQLite MCP** | Local DB | https://github.com/Anthropic/modelcontextprotocol-servers |
+
+### 35.3 Quick Start (Claude Code)
+```bash
+# 1. Clone the skills repo
+git clone https://github.com/frangelbarrera/osint-agent-skills.git
+cd osint-agent-skills
+
+# 2. Add to .claude/settings.json
+{
+  "mcpServers": {
+    "osint": {
+      "command": "node",
+      "args": ["./tools/mcp-server.js"],
+      "env": {
+        "SHODAN_KEY": "your-key",
+        "VT_API_KEY": "your-key",
+        "GITHUB_TOKEN": "your-token"
+      }
+    }
+  }
+}
+
+# 3. Launch Claude Code — tools will be auto-discovered
+```
 ---
 
 
