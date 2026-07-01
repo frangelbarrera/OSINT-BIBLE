@@ -7,8 +7,22 @@ This repository is dedicated to the responsible and ethical practice of Open-Sou
 
 ---
 
-## 🧭 Quick Index with Buttons
-[1. Fundamentals](#1-fundamentals) | [2. 4-Step Methodology](#2-4-step-methodology) | [3. Tools Mind Map](#3-tools-mind-map) | [4. Internet Search](#4-internet-search) | [5. Social Networks](#5-social-networks) | [6. Geoint & Images](#6-geoint--images) | [7. Domain / IP / DNS](#7-domain--ip--dns) | [8. Deep & Dark Web](#8-deep--dark-web) | [9. Automation (Python)](#9-automation-python) | [10. Report Templates](#10-report-templates) | [11. Legal Considerations](#11-legal-considerations) | [12. Extra Resources](#12-extra-resources) | [13. AI Intelligence](#13-ai-intelligence) | [14. Facial Recognition](#14-facial-recognition) | [15. Email/Phone Investigation](#15-email-phone-investigation) | [16. Data Breaches](#16-data-breaches) | [17. Blockchain/Crypto](#17-blockchain-crypto) | [18. Transport OSINT](#18-transport-osint) | [19. WiFi/Wardriving](#19-wifi-wardriving) | [20. Content Verification](#20-content-verification) | [21. Username Enumeration](#21-username-enumeration) | [22. Web Scraping](#22-web-scraping) | [23. Metadata Extraction](#23-metadata-extraction) | [24. Network Scanning](#24-network-scanning) | [25. Dark Web](#25-dark-web) | [26. All-in-One Frameworks](#26-all-in-one-frameworks) | [27. Advanced Maltego](#27-advanced-maltego) | [28. Professional Methodologies](#28-professional-methodologies) | [29. Advanced Google Dorks](#29-advanced-google-dorks) | [30. Learning Resources](#30-learning-resources) | [31. People Investigations](#31-people-investigations) | [32. Company Research](#32-company-research) | [33. Threat Intelligence Feeds](#33-threat-intelligence-feeds)
+## 🧭 Table of Contents
+
+### Foundations
+1. Fundamentals · 2. 4-Step Methodology · 3. Tools Mind Map · 11. Legal Considerations · 28. Professional Methodologies
+
+### Investigation Techniques
+4. Internet Search · 5. Social Networks · 6. GEOINT & Images · 7. Domain/IP/DNS · 15. Email/Phone · 17. Blockchain · 18. Transport · 19. WiFi · 20. Content Verification · 21. Username Enumeration · 22. Web Scraping · 23. Metadata · 24. Network Scanning · 29. Google Dorks · 31. People · 32. Companies
+
+### Sources & Data
+8. Deep/Dark Web · 16. Data Breaches · 25. Dark Web · 30. Learning Resources · 12. Extra Resources
+
+### Frameworks & Automation
+9. Automation (Python) · 10. Report Templates · 13. AI Intelligence · 14. Facial Recognition · 26. All-in-One Frameworks · 27. Maltego
+
+### Specialized
+33. Threat Intelligence Feeds · 34. ICS/OT OSINT · 35. AI Agent Skills & MCP
 
 > [!TIP]
 > **Apply this Bible in a private workspace:** > If you want to turn these methodologies into structured intelligence without exposing case data to third parties, explore [Abster Intelligence](https://github.com/frangelbarrera/Abster-Intelligence). It is a **free, open-source**, and local-first workspace for evidence organization, relationship mapping (Graph Engine), and AI-assisted investigation using your own keys.
@@ -1260,6 +1274,71 @@ site:*.*.target.com
 | **Bloomberg** | Financial data | https://www.bloomberg.com |
 
 ---
+
+## 33. Threat Intelligence Feeds
+**Consolidated IoC feeds for threat intelligence (extracted & expanded from §7):**
+
+### 33.1 Malware & C2 Feeds
+| Feed | Type | URL |
+|---|---|---|
+| MalwareBazaar | Malware samples | https://bazaar.abuse.ch |
+| ThreatFox | IoC aggregator | https://threatfox.abuse.ch |
+| Feodo Tracker | C2 IPs | https://feodotracker.abuse.ch |
+| SSL Blacklist | Malicious SSL | https://sslbl.abuse.ch |
+| URLhaus | Malware URLs | https://urlhaus.abuse.ch |
+
+### 33.2 Phishing & Fraud Feeds
+| PhishTank | Phishing URLs | https://www.phishtank.com |
+| OpenPhish | Phishing URLs | https://openphish.com |
+| FraudGuard | Fraud intel | https://fraudguard.io |
+
+### 33.3 IP & Domain Reputation
+| Spamhaus | IP/domain reputation | https://www.spamhaus.org |
+| FireHOL | IP lists | http://iplists.firehol.org |
+| AbuseIPDB | IP reports | https://www.abuseipdb.com |
+| GreyNoise | Internet scanner noise | https://www.greynoise.io |
+| CINS Score | Botnet IPs | http://cinsscore.com/#list |
+
+### 33.4 CTI Platforms (where to ingest all the above)
+| MISP | Open-source CTI platform | https://www.misp-project.org |
+| OpenCTI | CTI platform | https://www.opencti.io |
+| Yeti | IoC platform | https://yeti-platform.github.io |
+| aegistrace-threat-intelligence (author's) | Python CTI pipeline with ARIMA forecasting | https://github.com/frangelbarrera/aegistrace-threat-intelligence |
+
+---
+
+## 34. ICS/OT & Critical-Infrastructure OSINT
+**OSINT for industrial control systems, SCADA, and critical infrastructure:**
+
+| Resource | Type | URL |
+|---|---|---|
+| ICS-Cybersecurity-Audit (author's) | 5-phase audit methodology, IEC 62443 / NIST 800-82 | https://github.com/frangelbarrera/ICS-Cybersecurity-Audit |
+| IndustrialScanner-Lite (author's) | Modbus/S7Comm/DNP3 PCAP analyzer | https://github.com/frangelbarrera/IndustrialScanner-Lite |
+| Shodan ICS filters | ICS device search | https://www.shodan.io/search?query=port%3A502 |
+| CISA ICS Advisories | Vulnerability advisories | https://www.cisa.gov/news-events/cybersecurity-advisories |
+| ICS-CERT | US-CERT industrial alerts | https://us-cert.cisa.gov/ics |
+| ATT&CK for ICS | MITRE matrix | https://attack.mitre.org/matrices/ics |
+| RiskVisibility | OT visibility | https://www.riskvisibility.com |
+| Claroty | OT security (vendor) | https://claroty.com |
+| Nozomi | OT security (vendor) | https://www.nozominetworks.com |
+
+---
+
+## 35. AI Agent Skills & MCP Servers for OSINT
+**Run OSINT workflows inside Claude Code, Cursor, Ollama, or any MCP client:**
+
+| Resource | Type | URL |
+|---|---|---|
+| osint-agent-skills (author's) | 22 MCP tools + 295-line system prompt + 9 pivot playbooks | https://github.com/frangelbarrera/osint-agent-skills |
+| MCP Server Finder | Directory | https://glama.ai/mcp/servers |
+| PulseMCP | Directory | https://www.pulsemcp.com |
+| Shodan MCP | Shodan via MCP | https://github.com/BeehiveInnovations/shodan-mcp |
+| VirusTotal MCP | VT via MCP | https://github.com/burningion/online-ophelia |
+| awesome-mcp-servers | Curated list | https://github.com/punkpeye/awesome-mcp-servers |
+
+---
+
+
 
 ## 🤝 Contribute
 1. Fork ➜ 2. Branch `new-tool` ➜ 3. PR with tested URL (screenshot mandatory)  
