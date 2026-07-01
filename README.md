@@ -1276,34 +1276,49 @@ site:*.*.target.com
 ---
 
 ## 33. Threat Intelligence Feeds
-**Consolidated IoC feeds for threat intelligence (extracted & expanded from §7):**
+
+**Consolidated IoC feeds for threat intelligence :**
 
 ### 33.1 Malware & C2 Feeds
 | Feed | Type | URL |
 |---|---|---|
-| MalwareBazaar | Malware samples | https://bazaar.abuse.ch |
-| ThreatFox | IoC aggregator | https://threatfox.abuse.ch |
-| Feodo Tracker | C2 IPs | https://feodotracker.abuse.ch |
-| SSL Blacklist | Malicious SSL | https://sslbl.abuse.ch |
-| URLhaus | Malware URLs | https://urlhaus.abuse.ch |
+| **MalwareBazaar** | Malware samples | https://bazaar.abuse.ch |
+| **ThreatFox** | IoC aggregator | https://threatfox.abuse.ch |
+| **Feodo Tracker** | C2 IPs | https://feodotracker.abuse.ch |
+| **SSL Blacklist** | Malicious SSL certs | https://sslbl.abuse.ch |
+| **URLhaus** | Malware URLs | https://urlhaus.abuse.ch |
+| **MalShare** | Malware repository | http://www.malshare.com |
+| **VirusShare** | Sample sharing | https://virusshare.com |
+| **Malware Domain List** | Malicious domains | https://www.malwarepatrol.net |
 
 ### 33.2 Phishing & Fraud Feeds
-| PhishTank | Phishing URLs | https://www.phishtank.com |
-| OpenPhish | Phishing URLs | https://openphish.com |
-| FraudGuard | Fraud intel | https://fraudguard.io |
+| Feed | Type | URL |
+|---|---|---|
+| **PhishTank** | Phishing URLs | https://www.phishtank.com |
+| **OpenPhish** | Phishing URLs | https://openphish.com |
+| **FraudGuard** | Fraud intelligence | https://fraudguard.io |
 
 ### 33.3 IP & Domain Reputation
-| Spamhaus | IP/domain reputation | https://www.spamhaus.org |
-| FireHOL | IP lists | http://iplists.firehol.org |
-| AbuseIPDB | IP reports | https://www.abuseipdb.com |
-| GreyNoise | Internet scanner noise | https://www.greynoise.io |
-| CINS Score | Botnet IPs | http://cinsscore.com/#list |
+| Feed | Type | URL |
+|---|---|---|
+| **Spamhaus** | IP/domain reputation | https://www.spamhaus.org |
+| **FireHOL** | IP blocklists | http://iplists.firehol.org |
+| **AbuseIPDB** | IP abuse reports | https://www.abuseipdb.com |
+| **GreyNoise** | Internet scanner noise | https://www.greynoise.io |
+| **CINS Score** | Botnet IPs | http://cinsscore.com/#list |
+| **Binary Defense** | Banlist | https://www.binarydefense.com/banlist.txt |
+| **IPsum** | Curated IPs | https://raw.githubusercontent.com/stamparm/ipsum/master/ipsum.txt |
 
-### 33.4 CTI Platforms (where to ingest all the above)
-| MISP | Open-source CTI platform | https://www.misp-project.org |
-| OpenCTI | CTI platform | https://www.opencti.io |
-| Yeti | IoC platform | https://yeti-platform.github.io |
-| aegistrace-threat-intelligence (author's) | Python CTI pipeline with ARIMA forecasting | https://github.com/frangelbarrera/aegistrace-threat-intelligence |
+### 33.4 CTI Platforms (ingest & correlate)
+| Platform | Type | URL |
+|---|---|---|
+| **MISP** | Open-source CTI platform | https://www.misp-project.org |
+| **OpenCTI** | CTI platform | https://www.opencti.io |
+| **Yeti** | IoC platform | https://yeti-platform.github.io |
+| **aegistrace-threat-intelligence** | Python CTI pipeline (author's) | https://github.com/frangelbarrera/aegistrace-threat-intelligence |
+| **ThreatMiner** | Threat intel search | https://www.threatminer.org |
+| **PulseDive** | IoC enrichment | https://pulsedive.com |
+| **AlienVault OTX** | Threat exchange | https://otx.alienvault.com |
 
 ---
 
