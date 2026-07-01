@@ -22,7 +22,7 @@ This repository is dedicated to the responsible and ethical practice of Open-Sou
 [9. Automation (Python)](#9-automation-python) | [10. Report Templates](#10-report-templates) | [13. AI Intelligence](#13-ai-intelligence) | [14. Facial Recognition](#14-facial-recognition) | [26. All-in-One Frameworks](#26-all-in-one-frameworks) | [27. Advanced Maltego](#27-advanced-maltego)
 
 ### Specialized
-[33. Threat Intelligence Feeds](#33-threat-intelligence-feeds) | [34. ICS/OT & Critical-Infrastructure OSINT](#34-icsot--critical-infrastructure-osint) | [35. AI Agent Skills & MCP](#35-ai-agent-skills--mcp)
+[33. Threat Intelligence Feeds](#33-threat-intelligence-feeds) | [34. ICS/OT & Critical-Infrastructure OSINT](#34-icsot--critical-infrastructure-osint) | [35. AI Agent Skills & MCP](#35-ai-agent-skills--mcp-servers-for-osint)
 
 > [!TIP]
 > **Apply this Bible in a private workspace:** > If you want to turn these methodologies into structured intelligence without exposing case data to third parties, explore [Abster Intelligence](https://github.com/frangelbarrera/Abster-Intelligence). It is a **free, open-source**, and local-first workspace for evidence organization, relationship mapping (Graph Engine), and AI-assisted investigation using your own keys.
