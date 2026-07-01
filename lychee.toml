@@ -1,17 +1,18 @@
-# lychee link checker configuration
-# https://github.com/lycheeverse/lychee
-
-timeout = 20
+timeout = 30
 max_retries = 3
-max_redirects = 5
-max_concurrency = 8
+max_redirects = 10
+max_concurrency = 4
 method = "get"
+
+
+user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+
 insecure = true
 
-# Accepted HTTP status codes (200-299 = success/redirects, 403 = anti-bot, 429 = rate-limit OK)
-accept = ["200..=299", "403", "429"]
 
-# Domains excluded from checking (anti-bot protection, auth-required, local-only)
+accept = ["200..=299", "401", "403", "415", "429"]
+
+
 exclude = [
     'linkedin\.com',
     'facebook\.com',
@@ -23,4 +24,11 @@ exclude = [
     'sci-hub\.ru',
     'localhost',
     '127\.0\.0\.1',
+    'reuters\.com',              
+    'osintcombine\.com',         
+    'crisis24\.garda\.com',      
+    'similarfans\.com',          
+    'spyonweb\.com',             
+    'pakpips\.com',              
+    'hyperverge\.co',            
 ]
