@@ -402,6 +402,7 @@ graph TD
 1. **checkwa** - Link: [checkwa](https://checkwa.online) - Description: An online tool to check the status and availability of WhatsApp numbers.
 2. **WhatsApp Fake Chat** - Link: [WhatsApp Fake Chat](http://www.fakewhats.com/generator) - Description: An online tool to generate fake WhatsApp conversations for fun or pranks.
 3. **whatsfoto** - Link: [whatsfoto](https://github.com/zoutepopcorn/whatsfoto) - Description: A Python script to download profile pictures from WhatsApp contacts.
+4. **CheckLeaked WhatsApp** - Link: [CheckLeaked WhatsApp](https://whatsapp.checkleaked.cc) - Description: An online tool to look up WhatsApp numbers — download the current and historical profile pictures, read the About/bio text, and detect Business/Enterprise accounts. Free web interface with an optional API.
 
 ### 5.10 Skype
 1. **addmeContacts** - Link: [addmeContacts](http://add-me-contacts.com) - Description: A platform to find and connect with new contacts on various social media platforms.
@@ -881,6 +882,7 @@ def check_email_accounts(email):
 | **h8mail** | Local breach search | GitHub | Free |
 | **Hudson Rock** | Infostealer intelligence | https://www.hudsonrock.com/threat-intelligence-cybercrime-tools | Free |
 | **LeakRadar** | 290B+ stealer logs & breaches | https://leakradar.io | Freemium |
+| **CheckLeaked** | Real-time email/username/phone/password search | https://checkleaked.cc | Freemium |
 
 **Quick command:**
 ```bash
