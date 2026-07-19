@@ -373,7 +373,7 @@ graph TD
 27. **Vizit** - Link: [Vizit](https://redditstuff.github.io/sna/vizit) - Description: Visualize and analyze relationships between Reddit users and subreddits.
 28. **Wisdom of Reddit** - Link: [Wisdom of Reddit](https://wisdomofreddit.com) - Description: Curated collection of insightful quotes and comments from Reddit.
 
-### 5.7 Github
+### 5.7 Github Leak Detection
 1. **Awesome Lists** - Link: [Awesome Lists](http://awesomelists.top) - Description: A curated list of awesome lists for various programming languages, frameworks, and tools.
 2. **CoderStats** - Link: [CoderStats](https://coderstats.net) - Description: A platform for developers to track and showcase their coding activity and statistics from GitHub.
 3. **Digital Privacy** - Link: [Digital Privacy](https://github.com/ffffffff0x/Digital-Privacy) - Description: A collection of resources and tools for enhancing digital privacy and security.
@@ -587,6 +587,10 @@ exiftool -all= foto_sanitizada.jpg
 - [ShipSpotting](http://www.shipspotting.com) → ship photo database
 
 ---
+
+### 6.4 Video OSINT & Chronolocation
+
+> Video as a specific OSINT source plus chronolocation (determining when material was recorded). Does not duplicate 6.1-6.3 (metadata, geolocation, satellite).
 
 #### 6.4.1 Video Geolocation Workflow — 12 Steps
 
