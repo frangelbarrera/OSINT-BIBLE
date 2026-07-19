@@ -13,7 +13,7 @@ This repository is dedicated to the responsible and ethical practice of Open-Sou
 [1. Fundamentals](#1-fundamentals) | [2. 4-Step Methodology](#2-4-step-methodology) | [3. Tools Mind Map](#3-tools-mind-map) | [11. Legal Considerations](#11-legal-considerations) | [28. Professional Methodologies](#28-professional-methodologies)
 
 ### Investigation Techniques
-[4. Internet Search](#4-internet-search) | [5. Social Networks](#5-social-networks) | [6. GEOINT & Images](#6-geoint--images) | [7. Domain / IP / DNS](#7-domain--ip--dns) | [15. Email/Phone Investigation](#15-emailphone-investigation) | [17. Blockchain/Crypto](#17-blockchaincrypto) | [18. Transport OSINT](#18-transport-osint) | [19. WiFi/Wardriving](#19-wifiwardriving) | [20. Content Verification](#20-content-verification) | [21. Username Enumeration](#21-username-enumeration) | [22. Web Scraping](#22-web-scraping) | [23. Metadata Extraction](#23-metadata-extraction) | [24. Network Scanning](#24-network-scanning) | [29. Advanced Google Dorks](#29-advanced-google-dorks) | [31. People Investigations](#31-people-investigations) | [32. Company Research](#32-company-research) [36. Financial OSINT](#36-financial-osint) | [37. Investigator OPSEC & Sock Puppets](#37-investigator-opsec--sock-puppets) | [38. Cloud Storage OSINT](#38-cloud-storage-osint) | [39. Mobile App OSINT](#39-mobile-app-osint) | [40. Decentralized Social OSINT](#40-decentralized-social-osint) | [41. Counter-OSINT Self-Audit](#41-counter-osint-self-audit) | [42. Discord & Telegram OSINT 2026](#42-discord--telegram-osint-2026) | [43. Satellite OSINT 2026](#43-satellite-osint-2026) | [44. C2PA + SynthID + Deepfake Detection 2026](#44-c2pa--synthid--deepfake-detection-2026) | [45. Professional Templates & Deliverables](#45-professional-templates--deliverables) | [46. Regional OSINT](#46-regional-osint) | [47. Corporate OSINT Tradecraft](#47-corporate-osint-tradecraft) | [Appendix B. Structured Analytic Techniques](#appendix-b-structured-analytic-techniques-sats)
+[4. Internet Search](#4-internet-search) | [5. Social Networks](#5-social-networks) | [6. GEOINT & Images](#6-geoint--images) | [7. Domain / IP / DNS](#7-domain--ip--dns) | [15. Email/Phone Investigation](#15-emailphone-investigation) | [17. Blockchain/Crypto](#17-blockchaincrypto) | [18. Transport OSINT](#18-transport-osint) | [19. WiFi/Wardriving](#19-wifiwardriving) | [20. Content Verification](#20-content-verification) | [21. Username Enumeration](#21-username-enumeration) | [22. Web Scraping](#22-web-scraping) | [23. Metadata Extraction](#23-metadata-extraction) | [24. Network Scanning](#24-network-scanning) | [29. Advanced Google Dorks](#29-advanced-google-dorks) | [31. People Investigations](#31-people-investigations) | [32. Company Research](#32-company-research)
 
 ### Sources & Data
 [8. Deep & Dark Web](#8-deep--dark-web) | [16. Data Breaches](#16-data-breaches) | [25. Dark Web](#25-dark-web) | [30. Learning Resources](#30-learning-resources) | [12. Extra Resources](#12-extra-resources)
@@ -23,6 +23,9 @@ This repository is dedicated to the responsible and ethical practice of Open-Sou
 
 ### Specialized
 [33. Threat Intelligence Feeds](#33-threat-intelligence-feeds) | [34. ICS/OT & Critical-Infrastructure OSINT](#34-icsot--critical-infrastructure-osint) | [35. AI Agent Skills & MCP](#35-ai-agent-skills--mcp)
+
+### 2026 Expansion
+[36. Financial OSINT](#36-financial-osint) | [37. Investigator OPSEC & Sock Puppets](#37-investigator-opsec--sock-puppets) | [38. Cloud Storage OSINT](#38-cloud-storage-osint) | [39. Mobile App OSINT](#39-mobile-app-osint) | [40. Decentralized Social OSINT](#40-decentralized-social-osint) | [41. Counter-OSINT Self-Audit](#41-counter-osint-self-audit) | [42. Discord & Telegram OSINT 2026](#42-discord--telegram-osint-2026) | [43. Satellite OSINT 2026](#43-satellite-osint-2026) | [44. C2PA + SynthID + Deepfake Detection 2026](#44-c2pa--synthid--deepfake-detection-2026) | [45. Professional Templates & Deliverables](#45-professional-templates--deliverables) | [46. Regional OSINT](#46-regional-osint) | [47. Corporate OSINT Tradecraft](#47-corporate-osint-tradecraft) | [Appendix B. Structured Analytic Techniques](#appendix-b-structured-analytic-techniques-sats)
 
 > [!TIP]
 > **Apply this Bible in a private workspace:** > If you want to turn these methodologies into structured intelligence without exposing case data to third parties, explore [Abster Intelligence](https://github.com/frangelbarrera/Abster-Intelligence). It is a **free, open-source**, and local-first workspace for evidence organization, relationship mapping (Graph Engine), and AI-assisted investigation using your own keys.
@@ -386,6 +389,90 @@ graph TD
 13. **Github Username Search Engine** - Link: [Github Username Search Engine](https://githubnotes-47071.firebaseapp.com/#/?_k=n0bgxn) - Description: Another search engine to find GitHub usernames with advanced filtering options.
 14. **GitHut** - Link: [GitHut](https://githut.info) - Description: A website that provides statistics and visualizations of programming languages on GitHub.
 
+#### 5.7.x.1 Verified Tools
+
+| Tool | URL | Function |
+|---|---|---|
+| GitGot | https://github.com/BishopFox/GitGot | GitHub repo audit |
+| gitGraber | https://github.com/hisxo/gitGraber | GitHub secrets search |
+| GitHound | https://github.com/tillson/git-hound | Sensitive info search |
+| TruffleHog | https://github.com/trufflesecurity/trufflehog | Credential detection with verification |
+| Gitleaks | https://github.com/gitleaks/gitleaks | Fast secrets detection |
+
+#### 5.7.x.2 GitHub Dorks — 15 Practical Examples
+
+```text
+1.  ORGNAME filename:.env AWS_SECRET_ACCESS_KEY
+2.  ORGNAME filename:.env MAIL_PASSWORD
+3.  ORGNAME filename:.npmrc _auth
+4.  ORGNAME filename:.dockercfg
+5.  ORGNAME filename:config.rb password
+6.  ORGNAME filename:id_rsa BEGIN OPENSSH PRIVATE KEY
+7.  ORGNAME filename:id_dsa BEGIN DSA PRIVATE KEY
+8.  ORGNAME extension:pem PRIVATE KEY
+9.  ORGNAME filename:.git-credentials
+10. ORGNAME filename:settings.py SECRET_KEY
+11. ORGNAME filename:wp-config.php DB_PASSWORD
+12. ORGNAME filename:database.yml password
+13. ORGNAME "api.openai.com" Authorization:Bearer
+14. ORGNAME extension:sh AWS_ACCESS_KEY_ID
+15. ORGNAME filename:terraform.tfvars
+```
+
+**Variations:** `fork:true` to include forks · `archived:true` for archived repos · `pushed:>2026-01-01` for recent.
+
+#### 5.7.x.3 Tool Workflows
+
+**TruffleHog** (active credential verification):
+
+```bash
+# Install
+go install github.com/trufflesecurity/trufflehog/v3@latest
+
+# Scan repo with full history:
+trufflehog git https://github.com/ORGNAME/repo.git --only-verified
+
+# Scan organisation:
+trufflehog github --org=ORGNAME --only-verified
+
+# JSON output:
+trufflehog git https://github.com/ORGNAME/repo.git --json --only-verified > findings.json
+```
+
+The `--only-verified` flag filters only secrets confirmed active. Reduces false positives.
+
+**gitGraber** (continuous monitoring in cron):
+
+```bash
+git clone https://github.com/hisxo/gitGraber.git
+cd gitGraber
+
+# Configure config.py with GITHUB_TOKENS, WORDLIST, SLACK_WEBHOOK
+
+# First run:
+python3 gitGraber.py --wordlist wordlists/your_wordlist.txt --output
+
+# Cron every 6h:
+# 0 */6 * * * cd /opt/gitGraber && python3 gitGraber.py --wordlist ...
+```
+
+**GitGot** (interactive audit):
+
+```bash
+pip install gitgot
+python3 gitgot.py -q "ORGNAME"
+# Interactive session: [i]gnore, [s]ave, [r]eview, [q]uit
+```
+
+#### 5.7.x.4 Ethical Considerations
+
+- **Accessing a public repo is legitimate.** GitHub public is public.
+- **NOT legitimate:** using a found secret to escalate access. The difference between defensive OSINT and attack is **use, not access**.
+- **Responsible disclosure:** discovering a leak obliges you to notify the repo owner. 90 days before public disclosure (Project Zero standard).
+- **Do not include the full secret in the client report.** Format `ghp_••••••[last4]`.
+- **GitHub Security Advisory** for leaks in third-party repos.
+
+
 ### 5.8 Snapchat
 1. **addmeContacts** - Link: [addmeContacts](http://add-me-contacts.com) - Description: A platform to find and connect with new contacts on various social media platforms.
 2. **AddMeSnaps** - Link: [AddMeSnaps](https://www.addmesnaps.com) - Description: A website for discovering and adding new Snapchat friends.
@@ -498,6 +585,68 @@ exiftool -all= foto_sanitizada.jpg
 - [MarineTraffic](https://www.marinetraffic.com) → global AIS tracking
 - [VesselFinder](https://www.vesselfinder.com) → free alternative
 - [ShipSpotting](http://www.shipspotting.com) → ship photo database
+
+---
+
+#### 6.4.1 Video Geolocation Workflow — 12 Steps
+
+| # | Step | Tool |
+|---|------|------|
+| 1 | Identify the geolocation objective (humanitarian/journalistic/military) | — |
+| 2 | Extract keyframes with FFmpeg: `ffmpeg -i video.mp4 -vf "fps=1/10" frame_%04d.png` | [FFmpeg](https://ffmpeg.org) |
+| 3 | Extract EXIF metadata: `exiftool video.mp4` | [ExifTool](https://exiftool.org) |
+| 4 | Analyse audio: language, accent, calls to prayer (adhan = time + orientation to Mecca) | — |
+| 5 | Identify visual anchors: signs, licence plates, architecture, vegetation | — |
+| 6 | Geolocate anchors individually with Google Lens / Yandex Images + Overpass Turbo | — |
+| 7 | Trace sight lines from each anchor | [Google Earth Pro](https://www.google.com/earth) |
+| 8 | Validate with Street View | Google Street View |
+| 9 | Validate with historical satellite imagery | Google Earth Pro + [Copernicus Browser](https://browser.dataspace.copernicus.eu) |
+| 10 | Determine camera cardinal orientation with SunCalc | [SunCalc](https://www.suncalc.org) |
+| 11 | Triangulate date (chronolocation) | See 6.4.2 |
+| 12 | Document with BLUF + evidence package (each anchor with frame + screenshot + URL + hash) | — |
+
+#### 6.4.2 Shadow-Based Chronolocation — 8 Steps
+
+1. **Geolocate first** (6.4.1). Without lat/long, solar position cannot be calculated.
+2. **Identify vertical object with a sharp projected shadow.** Pole, column, standing person.
+3. **Measure cardinal direction of the shadow** (azimuth in degrees from Google Earth Pro).
+4. **Measure relative length:** ratio `shadow/object_height`. Solar elevation = `arctan(h/l)`.
+5. **Compute solar position** with [SunCalc.org](https://www.suncalc.org) (move slider until azimuth+elevation match).
+6. **Resolve symmetric date ambiguity** with contextual clues (vegetation, snow, datable events).
+7. **Validate with historical weather.** Visual Crossing Weather History (free tier).
+8. **Document margin of error.** Typically ±30-90 min of time, ±2-7 days of date. Report with confidence level.
+
+#### 6.4.3 Verified Video OSINT Tools
+
+| Tool | URL | Function |
+|---|---|---|
+| FFmpeg | https://ffmpeg.org | Video analysis and processing |
+| FotoForensics | https://fotoforensics.com | ELA image analysis |
+| Forensically | https://29a.ch/photo-forensics | Visual analysis suite |
+| ExifTool | https://exiftool.org | Metadata |
+| SunCalc | https://www.suncalc.org | Solar position |
+| Google Earth Pro | https://www.google.com/earth | Historical satellite |
+| Sentinel Hub | https://www.sentinel-hub.com | Sentinel-2 imagery |
+| yt-dlp | https://github.com/yt-dlp/yt-dlp | Video download |
+| GeoConfirmed | https://geoconfirmed.org | Collaborative geolocation |
+
+#### 6.4.4 Real Case — Bellingcat Bucha 2022
+
+Following the withdrawal of Russian troops from Bucha (Ukraine) in March 2022, images of civilian bodies in Yablunska Street appeared. Russia denied responsibility. Bellingcat and The New York Times published on **4 April 2022** an analysis **demonstrating that the bodies were already present during the Russian occupation**, using Maxar satellite imagery from 19 March.
+
+**Methodology:**
+
+1. Geolocation of each frame with a visible body in Yablunska Street.
+2. Acquisition of Maxar imagery from 19 March (during Russian occupation).
+3. Frame-by-frame comparison: dark objects on the street in the same locations where the 2 April video showed bodies. One-to-one correspondence.
+4. Validation with second satellite (Planet Labs, 21 March).
+5. Conclusion: bodies were already on the street on 19 March (Russian control). High confidence (cross-corroboration of satellite + video + testimonies).
+
+**Sources:**
+
+- [Bellingcat 2 April 2022](https://www.bellingcat.com/news/uk-and-europe/2022/04/02/identifying-russian-soldiers-involved-in-executions-near-bucha/)
+- [Bellingcat 23 May 2022](https://www.bellingcat.com/news/uk-and-europe/2022/05/23/bucha-cleaning-up-the-streets-and-the-evidence/)
+- [NYT 4 April 2022](https://www.nytimes.com/2022/04/04/world/europe/bucha-ukraine-bodies.html)
 
 ---
 
@@ -3682,163 +3831,6 @@ ACTIVATION MATRIX:
 ```
 
 **Principles:** Indicators must be observable · Activation matrix defined BEFORE any indicator occurs · System has value only if reviewed at the committed frequency.
-
----
-
-## Sub-sections to insert into existing chapters
-
-### → Insert as 6.4: Video OSINT & Chronolocation
-
-> Sub-section to insert within Chapter 6 (GEOINT & Images). Does not duplicate 6.1-6.3 (which cover metadata, geolocation and satellite). This covers **video as a specific OSINT source** and **chronolocation** (determining when material was recorded).
-
-#### 6.4.1 Video Geolocation Workflow — 12 Steps
-
-| # | Step | Tool |
-|---|------|------|
-| 1 | Identify the geolocation objective (humanitarian/journalistic/military) | — |
-| 2 | Extract keyframes with FFmpeg: `ffmpeg -i video.mp4 -vf "fps=1/10" frame_%04d.png` | [FFmpeg](https://ffmpeg.org) |
-| 3 | Extract EXIF metadata: `exiftool video.mp4` | [ExifTool](https://exiftool.org) |
-| 4 | Analyse audio: language, accent, calls to prayer (adhan = time + orientation to Mecca) | — |
-| 5 | Identify visual anchors: signs, licence plates, architecture, vegetation | — |
-| 6 | Geolocate anchors individually with Google Lens / Yandex Images + Overpass Turbo | — |
-| 7 | Trace sight lines from each anchor | [Google Earth Pro](https://www.google.com/earth) |
-| 8 | Validate with Street View | Google Street View |
-| 9 | Validate with historical satellite imagery | Google Earth Pro + [Copernicus Browser](https://browser.dataspace.copernicus.eu) |
-| 10 | Determine camera cardinal orientation with SunCalc | [SunCalc](https://www.suncalc.org) |
-| 11 | Triangulate date (chronolocation) | See 6.4.2 |
-| 12 | Document with BLUF + evidence package (each anchor with frame + screenshot + URL + hash) | — |
-
-#### 6.4.2 Shadow-Based Chronolocation — 8 Steps
-
-1. **Geolocate first** (6.4.1). Without lat/long, solar position cannot be calculated.
-2. **Identify vertical object with a sharp projected shadow.** Pole, column, standing person.
-3. **Measure cardinal direction of the shadow** (azimuth in degrees from Google Earth Pro).
-4. **Measure relative length:** ratio `shadow/object_height`. Solar elevation = `arctan(h/l)`.
-5. **Compute solar position** with [SunCalc.org](https://www.suncalc.org) (move slider until azimuth+elevation match).
-6. **Resolve symmetric date ambiguity** with contextual clues (vegetation, snow, datable events).
-7. **Validate with historical weather.** Visual Crossing Weather History (free tier).
-8. **Document margin of error.** Typically ±30-90 min of time, ±2-7 days of date. Report with confidence level.
-
-#### 6.4.3 Verified Video OSINT Tools
-
-| Tool | URL | Function |
-|---|---|---|
-| FFmpeg | https://ffmpeg.org | Video analysis and processing |
-| FotoForensics | https://fotoforensics.com | ELA image analysis |
-| Forensically | https://29a.ch/photo-forensics | Visual analysis suite |
-| ExifTool | https://exiftool.org | Metadata |
-| SunCalc | https://www.suncalc.org | Solar position |
-| Google Earth Pro | https://www.google.com/earth | Historical satellite |
-| Sentinel Hub | https://www.sentinel-hub.com | Sentinel-2 imagery |
-| yt-dlp | https://github.com/yt-dlp/yt-dlp | Video download |
-| GeoConfirmed | https://geoconfirmed.org | Collaborative geolocation |
-
-#### 6.4.4 Real Case — Bellingcat Bucha 2022
-
-Following the withdrawal of Russian troops from Bucha (Ukraine) in March 2022, images of civilian bodies in Yablunska Street appeared. Russia denied responsibility. Bellingcat and The New York Times published on **4 April 2022** an analysis **demonstrating that the bodies were already present during the Russian occupation**, using Maxar satellite imagery from 19 March.
-
-**Methodology:**
-
-1. Geolocation of each frame with a visible body in Yablunska Street.
-2. Acquisition of Maxar imagery from 19 March (during Russian occupation).
-3. Frame-by-frame comparison: dark objects on the street in the same locations where the 2 April video showed bodies. One-to-one correspondence.
-4. Validation with second satellite (Planet Labs, 21 March).
-5. Conclusion: bodies were already on the street on 19 March (Russian control). High confidence (cross-corroboration of satellite + video + testimonies).
-
-**Sources:**
-
-- [Bellingcat 2 April 2022](https://www.bellingcat.com/news/uk-and-europe/2022/04/02/identifying-russian-soldiers-involved-in-executions-near-bucha/)
-- [Bellingcat 23 May 2022](https://www.bellingcat.com/news/uk-and-europe/2022/05/23/bucha-cleaning-up-the-streets-and-the-evidence/)
-- [NYT 4 April 2022](https://www.nytimes.com/2022/04/04/world/europe/bucha-ukraine-bodies.html)
-
----
-
-### → Insert as 5.7.x: GitHub Leak Detection
-
-> Sub-section to insert within Chapter 5.7 GitHub of the existing README.
-
-#### 5.7.x.1 Verified Tools
-
-| Tool | URL | Function |
-|---|---|---|
-| GitGot | https://github.com/BishopFox/GitGot | GitHub repo audit |
-| gitGraber | https://github.com/hisxo/gitGraber | GitHub secrets search |
-| GitHound | https://github.com/tillson/git-hound | Sensitive info search |
-| TruffleHog | https://github.com/trufflesecurity/trufflehog | Credential detection with verification |
-| Gitleaks | https://github.com/gitleaks/gitleaks | Fast secrets detection |
-
-#### 5.7.x.2 GitHub Dorks — 15 Practical Examples
-
-```text
-1.  ORGNAME filename:.env AWS_SECRET_ACCESS_KEY
-2.  ORGNAME filename:.env MAIL_PASSWORD
-3.  ORGNAME filename:.npmrc _auth
-4.  ORGNAME filename:.dockercfg
-5.  ORGNAME filename:config.rb password
-6.  ORGNAME filename:id_rsa BEGIN OPENSSH PRIVATE KEY
-7.  ORGNAME filename:id_dsa BEGIN DSA PRIVATE KEY
-8.  ORGNAME extension:pem PRIVATE KEY
-9.  ORGNAME filename:.git-credentials
-10. ORGNAME filename:settings.py SECRET_KEY
-11. ORGNAME filename:wp-config.php DB_PASSWORD
-12. ORGNAME filename:database.yml password
-13. ORGNAME "api.openai.com" Authorization:Bearer
-14. ORGNAME extension:sh AWS_ACCESS_KEY_ID
-15. ORGNAME filename:terraform.tfvars
-```
-
-**Variations:** `fork:true` to include forks · `archived:true` for archived repos · `pushed:>2026-01-01` for recent.
-
-#### 5.7.x.3 Tool Workflows
-
-**TruffleHog** (active credential verification):
-
-```bash
-# Install
-go install github.com/trufflesecurity/trufflehog/v3@latest
-
-# Scan repo with full history:
-trufflehog git https://github.com/ORGNAME/repo.git --only-verified
-
-# Scan organisation:
-trufflehog github --org=ORGNAME --only-verified
-
-# JSON output:
-trufflehog git https://github.com/ORGNAME/repo.git --json --only-verified > findings.json
-```
-
-The `--only-verified` flag filters only secrets confirmed active. Reduces false positives.
-
-**gitGraber** (continuous monitoring in cron):
-
-```bash
-git clone https://github.com/hisxo/gitGraber.git
-cd gitGraber
-
-# Configure config.py with GITHUB_TOKENS, WORDLIST, SLACK_WEBHOOK
-
-# First run:
-python3 gitGraber.py --wordlist wordlists/your_wordlist.txt --output
-
-# Cron every 6h:
-# 0 */6 * * * cd /opt/gitGraber && python3 gitGraber.py --wordlist ...
-```
-
-**GitGot** (interactive audit):
-
-```bash
-pip install gitgot
-python3 gitgot.py -q "ORGNAME"
-# Interactive session: [i]gnore, [s]ave, [r]eview, [q]uit
-```
-
-#### 5.7.x.4 Ethical Considerations
-
-- **Accessing a public repo is legitimate.** GitHub public is public.
-- **NOT legitimate:** using a found secret to escalate access. The difference between defensive OSINT and attack is **use, not access**.
-- **Responsible disclosure:** discovering a leak obliges you to notify the repo owner. 90 days before public disclosure (Project Zero standard).
-- **Do not include the full secret in the client report.** Format `ghp_••••••[last4]`.
-- **GitHub Security Advisory** for leaks in third-party repos.
 
 ---
 
