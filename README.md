@@ -28,7 +28,9 @@ This repository is dedicated to the responsible and ethical practice of Open-Sou
 [36. Financial OSINT](#36-financial-osint) | [37. Investigator OPSEC & Sock Puppets](#37-investigator-opsec--sock-puppets) | [38. Cloud Storage OSINT](#38-cloud-storage-osint) | [39. Mobile App OSINT](#39-mobile-app-osint) | [40. Decentralized Social OSINT](#40-decentralized-social-osint) | [41. Counter-OSINT Self-Audit](#41-counter-osint-self-audit) | [42. Discord & Telegram OSINT 2026](#42-discord--telegram-osint-2026) | [43. Satellite OSINT 2026](#43-satellite-osint-2026) | [44. C2PA + SynthID + Deepfake Detection 2026](#44-c2pa--synthid--deepfake-detection-2026) | [45. Professional Templates & Deliverables](#45-professional-templates--deliverables) | [46. Regional OSINT](#46-regional-osint) | [47. Corporate OSINT Tradecraft](#47-corporate-osint-tradecraft) | [Appendix B. Structured Analytic Techniques](#appendix-b-structured-analytic-techniques-sats)
 
 > [!TIP]
-> **Apply this Bible in a private workspace:** > If you want to turn these methodologies into structured intelligence without exposing case data to third parties, explore [Abster Intelligence](https://github.com/frangelbarrera/Abster-Intelligence). It is a **free, open-source**, and local-first workspace for evidence organization, relationship mapping (Graph Engine), and AI-assisted investigation using your own keys.
+> **Operationalize these methodologies with auditable agents:**  
+> If you want to turn repeatable investigative procedures into structured, budget-aware workflows, explore [ARNES](https://github.com/frangelbarrera/ARNES). It is a **free, open-source** agent harness that compiles YAML manuals into specialist-driven runs with transparent prompts, markdown audit logs, and MCP integration.
+
 ---
 
 ## 1. Fundamentals
