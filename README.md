@@ -28,8 +28,8 @@ This repository is dedicated to the responsible and ethical practice of Open-Sou
 [36. Financial OSINT](#36-financial-osint) | [37. Investigator OPSEC & Sock Puppets](#37-investigator-opsec--sock-puppets) | [38. Cloud Storage OSINT](#38-cloud-storage-osint) | [39. Mobile App OSINT](#39-mobile-app-osint) | [40. Decentralized Social OSINT](#40-decentralized-social-osint) | [41. Counter-OSINT Self-Audit](#41-counter-osint-self-audit) | [42. Discord & Telegram OSINT 2026](#42-discord--telegram-osint-2026) | [43. Satellite OSINT 2026](#43-satellite-osint-2026) | [44. C2PA + SynthID + Deepfake Detection 2026](#44-c2pa--synthid--deepfake-detection-2026) | [45. Professional Templates & Deliverables](#45-professional-templates--deliverables) | [46. Regional OSINT](#46-regional-osint) | [47. Corporate OSINT Tradecraft](#47-corporate-osint-tradecraft) | [Appendix B. Structured Analytic Techniques](#appendix-b-structured-analytic-techniques-sats)
 
 > [!TIP]
-> **Operationalize these methodologies with auditable agents:**  
-> If you want to turn repeatable investigative procedures into structured, budget-aware workflows, explore [ARNES](https://github.com/frangelbarrera/ARNES). It is a **free, open-source** agent harness that compiles YAML manuals into specialist-driven runs with transparent prompts, markdown audit logs, and MCP integration.
+> **Operationalize these methodologies with autonomous agents:**
+> Automate repeatable investigative procedures into structured, budget-aware workflows using the [agentic-harness](https://github.com/frangelbarrera/agentic-harness) open-source repository. A production-grade control plane for auditable agentic runs with transparent cost-control and MCP integration.
 
 ---
 
