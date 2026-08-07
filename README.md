@@ -651,8 +651,7 @@ Following the withdrawal of Russian troops from Bucha (Ukraine) in March 2022, i
 
 **Sources:**
 
-- [Bellingcat 2 April 2022](https://www.bellingcat.com/news/uk-and-europe/2022/04/02/identifying-russian-soldiers-involved-in-executions-near-bucha/)
-- [Bellingcat 23 May 2022](https://www.bellingcat.com/news/uk-and-europe/2022/05/23/bucha-cleaning-up-the-streets-and-the-evidence/)
+- [Bellingcat: Russia's Bucha 'Facts' Versus the Evidence](https://www.bellingcat.com/news/2022/04/04/russias-bucha-facts-versus-the-evidence/)
 - [NYT 4 April 2022](https://www.nytimes.com/2022/04/04/world/europe/bucha-ukraine-bodies.html)
 
 ---
@@ -954,7 +953,6 @@ status: draft # draft | reviewed | delivered
 | **DorkGPT** | AI dork generator | https://www.dorkgpt.com | Auto-creates Google dorks |
 | **SearchDorks** | Dorks for multiple engines | https://kriztalz.sh/search-dorks | FOFA, Shodan, Censys |
 | **Sensity AI** | Deepfake detection | https://sensity.ai | Professional |
-| **Factinsect** | AI fact-checking | https://factinsect.com | Free |
 | **Full Fact** | AI fact-checking (UK) | https://fullfact.org | Free |
 | **Logically** | AI disinfo detection | https://logically.com | Free tier |
 
@@ -1589,11 +1587,9 @@ port:4840                  # OPC UA
 ### 35.2 MCP Servers for Specific OSINT Tools
 | MCP Server | Wraps | URL |
 |---|---|---|
-| **Shodan MCP** | Shodan API | https://github.com/BeehiveInnovations/shodan-mcp |
-| **VirusTotal MCP** | VT API | https://github.com/burningion/online-ophelia |
-| **Brave Search MCP** | Brave Search | https://github.com/Anthropic/modelcontextprotocol-servers |
-| **Fetch MCP** | Web fetcher | https://github.com/Anthropic/modelcontextprotocol-servers |
-| **SQLite MCP** | Local DB | https://github.com/Anthropic/modelcontextprotocol-servers |
+| **Brave Search MCP** | Brave Search | https://github.com/brave/brave-search-mcp-server |
+| **Fetch MCP** | Web fetcher | https://github.com/modelcontextprotocol/servers/blob/main/src/fetch |
+| **SQLite MCP** | Local DB | https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite |
 
 ### 35.3 Agent Frameworks for OSINT Orchestration
 | Framework | Language | URL | Highlight |
@@ -1708,9 +1704,9 @@ cd osint-agent-skills
 
 **Verified public sources:**
 
-- [DOJ Kleptocracy Asset Recovery Initiative](https://www.justice.gov/criminal/criminal-mlnsa/kleptocracy-asset-recovery-initiative)
+- [DOJ Money Laundering and Asset Recovery Section (kleptocracy cases)](https://www.justice.gov/criminal/criminal-mnf)
 - [DOJ press release July 2016](https://www.justice.gov/opa/pr/united-states-seeks-recover-more-1-billion-obtained-corruption-involving-malaysian-sovereign)
-- [DOJ press release October 2019](https://www.justice.gov/opa/pr/united-states-announces-recovery-over-1-billion-assets-stolen-1mdb)
+- [DOJ: Over $1 Billion in Misappropriated 1MDB Funds Now Repatriated to Malaysia](https://www.justice.gov/archives/opa/pr/over-1-billion-misappropriated-1mdb-funds-now-repatriated-malaysia)
 - [Sarawak Report](https://www.sarawakreport.org) — Clare Rewcastle Brown's blog that broke the scandal in 2015
 - [ICIJ Offshore Leaks](https://offshoreleaks.icij.org) — search "Good Star", "Wynton", "Jho Low"
 - [PACER US Courts](https://pacer.uscourts.gov) — civil filings, Central District of California
@@ -2636,7 +2632,7 @@ Internet penetration ~93% (Bitkom 2024). Google dominates search; alternative pr
 
 #### Notable Cases
 - **Wirecard scandal (2020).** Financial fraud at Wirecard AG, exposed by Financial Times (Dan McCrum) using OSINT on Asian phantom operations. Correctiv contributed with follow-up investigations. URLs: https://en.wikipedia.org/wiki/Wirecard_scandal · https://correctiv.org/en/latest-stories/wirecard/
-- **Cum-Ex Files (2018).** Cross-border tax fraud scheme exposed by Correctiv and partners. URL: https://correctiv.org/en/latest-stories/cum-ex-files/
+- **Cum-Ex Files (2018).** Cross-border tax fraud scheme exposed by Correctiv and partners. URL: https://correctiv.org/en/thema/latest-stories/cumex-files-en/
 - **NSU (National Socialist Underground, 2011).** Neo-Nazi terror cell; investigation heavily criticised for intelligence failures.
 
 </details>
@@ -3686,8 +3682,8 @@ Internet penetration ~91% (ABS 2024). Google dominates search. WhatsApp, iMessag
 
 **Public emblematic cases:**
 
-1. **Stuxnet (2010)** — analysis of the first cyber-physical weapon. https://securelist.com/stuxnet-and-zero-days/36407/
-2. **Flame (2012)** — discovery of a sophisticated espionage toolkit. https://securelist.com/flame-mystery-auto-update-component/33051/
+1. **Stuxnet (2010)** — analysis of the first cyber-physical weapon. https://securelist.com/stuxnet-zero-victims/67483/
+2. **Flame (2012)** — discovery of a sophisticated espionage toolkit. https://securelist.com/the-flame-questions-and-answers/34344/
 3. **Gauss (2012)** — discovery of nation-state banking malware. https://securelist.com/gauss-nation-state-cyber-espionage-banking-trojan/36620/
 4. **Equation Group (2015)** — Q&A PDF documenting the most sophisticated APT group yet discovered. https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07205555/Equation_group_questions_and_answers.pdf
 5. **Securelist RE workshop** — public training materials.
