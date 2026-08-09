@@ -28,8 +28,11 @@ This repository is dedicated to the responsible and ethical practice of Open-Sou
 [36. Financial OSINT](#36-financial-osint) | [37. Investigator OPSEC & Sock Puppets](#37-investigator-opsec--sock-puppets) | [38. Cloud Storage OSINT](#38-cloud-storage-osint) | [39. Mobile App OSINT](#39-mobile-app-osint) | [40. Decentralized Social OSINT](#40-decentralized-social-osint) | [41. Counter-OSINT Self-Audit](#41-counter-osint-self-audit) | [42. Discord & Telegram OSINT 2026](#42-discord--telegram-osint-2026) | [43. Satellite OSINT 2026](#43-satellite-osint-2026) | [44. C2PA + SynthID + Deepfake Detection 2026](#44-c2pa--synthid--deepfake-detection-2026) | [45. Professional Templates & Deliverables](#45-professional-templates--deliverables) | [46. Regional OSINT](#46-regional-osint) | [47. Corporate OSINT Tradecraft](#47-corporate-osint-tradecraft) | [Appendix B. Structured Analytic Techniques](#appendix-b-structured-analytic-techniques-sats)
 
 > [!TIP]
-> **Operationalize these methodologies with autonomous agents:**
-> Automate repeatable investigative procedures into structured, budget-aware workflows using the [agentic-harness](https://github.com/frangelbarrera/agentic-harness) open-source repository. A production-grade control plane for auditable agentic runs with transparent cost-control and MCP integration.
+> **Extend OSINT-BIBLE with the companion tools that fit your workflow:**
+> - **Operationalize** its methodologies with [osint-agent-skills](https://github.com/frangelbarrera/osint-agent-skills).
+> - **Investigate** privately with [Abster-Intelligence](https://github.com/frangelbarrera/Abster-Intelligence).
+> - **Automate** auditable workflows with [agentic-harness](https://github.com/frangelbarrera/agentic-harness).
+
 
 ---
 
