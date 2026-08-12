@@ -1200,6 +1200,8 @@ python photon.py -u https://target.com \
 
 ## 23. Metadata Extraction
 
+- [Metadata Remover](https://metadataremover.ai/metadata-viewer) — Browser-based EXIF, GPS, XMP and IPTC viewer for JPG, PNG and WebP files; keep forensic originals unchanged.
+
 **Complete suite:**
 
 | Tool | File Type | URL | Platform |
