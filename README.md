@@ -581,7 +581,7 @@ exiftool -all= foto_sanitizada.jpg
 - [CamHacker](https://www.camhacker.com) → public webcams
 
 ### 6.3 Satellite / Drone
-- [Sentinel-Hub](https://apps.sentinel-hub.com) → 10m resolution, free
+- [Copernicus Browser](https://browser.dataspace.copernicus.eu) → Sentinel-1/2/3/5P, free browser
 - [NASA-FIRMS](https://firms.modaps.eosdis.nasa.gov) → real-time fires
 - [Zoom Earth](https://zoom.earth) → METAR overlay
 - [FlightRadar24](https://www.flightradar24.com) → flight radar
@@ -1521,7 +1521,7 @@ site:*.*.target.com
 | Platform | Type | URL |
 |---|---|---|
 | **MISP** | Open-source CTI platform | https://www.misp-project.org |
-| **OpenCTI** | CTI platform | https://www.opencti.io |
+| **OpenCTI** | Open-source CTI platform | https://filigran.io/products/opencti |
 | **Yeti** | IoC platform | https://yeti-platform.github.io |
 | **aegistrace-threat-intelligence** | Python CTI pipeline (author's) | https://github.com/frangelbarrera/aegistrace-threat-intelligence |
 | **ThreatMiner** | Threat intel search | https://www.threatminer.org |
@@ -1539,8 +1539,8 @@ site:*.*.target.com
 |---|---|---|
 | **ICS-Cybersecurity-Audit** (author's) | 5-phase audit methodology, IEC 62443 / NIST 800-82 | https://github.com/frangelbarrera/ICS-Cybersecurity-Audit |
 | **MITRE ATT&CK for ICS** | Tactics & techniques matrix | https://attack.mitre.org/matrices/ics |
-| **CISA ICS Advisories** | Vulnerability advisories | https://www.cisa.gov/news-events/cybersecurity-advisories |
-| **ICS-CERT** | US-CERT industrial alerts | https://us-cert.cisa.gov/ics |
+| **CISA ICS Advisories** | Vulnerability advisories | https://www.cisa.gov/ics |
+| **NIST SP 800-82 Rev. 3** | OT security guidance | https://csrc.nist.gov/pubs/sp/800/82/r3/final |
 
 ### 34.2 Scanners & Tools
 | Tool | Function | URL |
@@ -1982,16 +1982,18 @@ site:amazonaws.com filetype:pdf "confidential"
 | Tool | URL | Function |
 |---|---|---|
 | C2PA viewer | https://c2paviewer.com | Visual verifier of C2PA manifests |
-| Content Credentials | https://contentcredentials.org | Official C2PA standard |
-| SynthID (Google DeepMind) | https://deepmind.google/technologies/synthid/ | AI content watermarking |
+| Content Credentials | https://contentcredentials.org | C2PA provenance ecosystem |
+| SynthID (Google DeepMind) | https://deepmind.google/models/synthid/ | AI content watermarking |
 | Reality Defender | https://www.realitydefender.com | Deepfake detection (free API 50/mo) |
 | Truepic | https://truepic.com | Content credentials platform |
 | Sensity AI | https://sensity.ai | Deepfake detection |
+| C2PA open-source SDK | https://opensource.contentauthenticity.org | Open-source Content Credentials tooling |
+| SynthID Text | https://github.com/google-deepmind/synthid-text | Text watermarking reference implementation |
 
 ### 44.2 Layered Verification Methodology
 
-1. **Verify C2PA Content Credentials** with c2paviewer.com before any analysis.
-2. **Detect SynthID watermark** if present (Google SynthID detector).
+1. **Verify C2PA Content Credentials** with [C2PA Viewer](https://c2paviewer.com) before any analysis.
+2. **Check for SynthID signals** if the content was produced by a supported Google model; treat the result as probabilistic, not conclusive.
 3. **If no credentials, run Reality Defender / Sensity** for forensic analysis.
 4. **Document absence of credentials** as an indicator (not proof) of manipulation.
 5. **Cross-check with reverse image search** (Google Lens, Yandex, TinEye).
