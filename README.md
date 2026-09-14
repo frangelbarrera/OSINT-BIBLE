@@ -966,6 +966,7 @@ status: draft # draft | reviewed | delivered
 | **OSINT by PimEyes** | Pro version for professionals | https://osint.pimeyes.com | Paid |
 | **FaceCheck.ID** | Search in social networks | https://facecheck.id | Freemium |
 | **Clearview AI** | Police facial recognition | (Requires authorization) | Professional |
+| **Face2social** | Profile-picture search on public Instagram, Facebook, TikTok and X accounts | https://face2social.com | Freemium |
 
 **Usage methodology:**
 1. Capture high-quality image
