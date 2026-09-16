@@ -656,6 +656,7 @@ Following the withdrawal of Russian troops from Bucha (Ukraine) in March 2022, i
 | Subdomains | Amass | `amass enum -d target.com -o subs.txt` |
 | Certificates | CRT.sh | `curl https://crt.sh/?q=%25.target.com&output=json` |
 | Historical DNS | [SecurityTrails](https://securitytrails.com) | Free API 50/month |
+| Tech stack | [StackScan](https://www.stackscan.com) | 399M+ sites, reverse lookup by technology |
 | Neighbor IPs | [BGP.he](https://bgp.he.net) | CIDR |
 | Reputation | [VirusTotal](https://virustotal.com) | `vt ip_info <ip>` |
 | Quick scan | [Nmap-online](https://nmap.online) | no VPN |
