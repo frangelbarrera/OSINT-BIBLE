@@ -1627,6 +1627,7 @@ port:4840                  # OPC UA
 |---|---|---|
 | **Brave Search MCP** | Brave Search | https://github.com/brave/brave-search-mcp-server |
 | **Fetch MCP** | Web fetcher | https://github.com/modelcontextprotocol/servers/blob/main/src/fetch |
+| **Voidly Atlas** | Voidly censorship data: country status, domain-blocking checks, incidents linked to OONI, Censored Planet and IODA evidence | https://github.com/voidly-ai/atlas-mcp |
 | **SQLite MCP** | Local DB | https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite |
 
 ### 35.3 Agent Frameworks for OSINT Orchestration
