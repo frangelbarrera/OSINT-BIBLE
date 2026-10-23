@@ -27,6 +27,7 @@ Usage
 -----
     python3 scripts/link_checker.py
     python3 scripts/link_checker.py README.md
+    python3 scripts/link_checker.py --repo audit/links-status.csv --all
     python3 scripts/link_checker.py README.md audit/links-status-2026-09-25.csv --all
     python3 scripts/link_checker.py README.md out.csv --workers 30
     python3 scripts/link_checker.py README.md --method head --limit 50
@@ -51,6 +52,7 @@ import os
 import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urlsplit
 
 import requests
 
@@ -70,14 +72,19 @@ HEAD_RETRY = BLOCKED | DEAD | {405, 501}
 FIELDS = ["url", "status", "http", "final_url", "source_line", "note"]
 ORDER = ("OK", "REDIRECT", "BLOCKED", "NO_RESPONSE", "DEAD")
 TIMEOUT = 15
+IGNORED_HOSTS = {"example.org", "www.example.org"}
 
-def extract_urls(path):
-    """Return {url: first line number where it appears}."""
+def extract_urls(paths):
+    """Return {url: first source-line reference where it appears}."""
     found = {}
-    with open(path, encoding="utf-8", errors="ignore") as fh:
-        for lineno, line in enumerate(fh, 1):
-            for match in URL_RE.findall(line):
-                found.setdefault(match.rstrip(".,;:"), lineno)
+    for path in paths:
+        with open(path, encoding="utf-8", errors="ignore") as fh:
+            for lineno, line in enumerate(fh, 1):
+                for match in URL_RE.findall(line):
+                    url = match.rstrip(".,;:")
+                    if urlsplit(url).netloc.lower() in IGNORED_HOSTS:
+                        continue
+                    found.setdefault(url, f"{path}:{lineno}")
     return found
 
 def classify(url, method="get"):
@@ -134,19 +141,35 @@ def main(argv=None):
                         help="include OK rows in the CSV as well; without it the CSV holds non-OK rows only")
     parser.add_argument("--debug", action="store_true",
                         help="print one line per URL with its status, HTTP code and URL")
+    parser.add_argument("--repo", action="store_true",
+                        help="audit README, country files and repository documentation")
     args = parser.parse_args(argv)
 
-    if not os.path.isfile(args.input):
-        print(f"error: input file not found: {args.input}", file=sys.stderr)
+    output_path = args.output
+    if args.repo:
+        if args.output:
+            parser.error("with --repo, provide only the output CSV as the positional argument")
+        if args.input != "README.md":
+            output_path = args.input
+    paths = (["README.md"] + sorted(
+        os.path.join("countries", name) for name in os.listdir("countries")
+        if name.endswith(".md")
+    ) + sorted(
+        os.path.join("docs", name) for name in os.listdir("docs")
+        if name.endswith(".md")
+    ) + ["scripts/README.md"] if args.repo else [args.input])
+    missing = [path for path in paths if not os.path.isfile(path)]
+    if missing:
+        print("error: input file not found: " + ", ".join(missing), file=sys.stderr)
         return 2
     if args.workers < 1:
         parser.error("--workers must be at least 1")
     if args.limit < 0:
         parser.error("--limit cannot be negative")
 
-    urls = extract_urls(args.input)
+    urls = extract_urls(paths)
     if not urls:
-        print(f"error: no URLs found in {args.input}", file=sys.stderr)
+        print(f"error: no URLs found in {', '.join(paths)}", file=sys.stderr)
         return 2
     targets = list(urls)
     if args.limit:
@@ -158,7 +181,7 @@ def main(argv=None):
         print(f"{len(targets)} URLs would be probed (dry-run: no HTTP requests made)")
         return 0
 
-    print(f"Link checker -> {args.input}  ({len(urls)} unique URLs)")
+    print(f"Link checker -> {', '.join(paths)}  ({len(urls)} unique URLs)")
     rows = []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         for row in pool.map(lambda u: classify(u, args.method), targets):
@@ -176,19 +199,19 @@ def main(argv=None):
         for row in rows:
             print(f"  {row[1]:<12}{str(row[2]):<6}{row[0]}")
 
-    if not args.output:
-        print("no output path given: nothing written to disk")
+    if not output_path:
+        print("no output path given, nothing written to disk")
         return 0
 
-    directory = os.path.dirname(args.output)
+    directory = os.path.dirname(output_path)
     if directory:
         os.makedirs(directory, exist_ok=True)
     export = [r for r in rows if args.all or r[1] != "OK"]
-    with open(args.output, "w", newline="", encoding="utf-8") as fh:
+    with open(output_path, "w", newline="", encoding="utf-8") as fh:
         writer = csv.writer(fh, lineterminator="\n")
         writer.writerow(FIELDS)
         writer.writerows(export)
-    print(f"CSV written: {args.output}  ({len(export)} rows)")
+    print(f"CSV written: {output_path}  ({len(export)} rows)")
     return 0
 
 if __name__ == "__main__":

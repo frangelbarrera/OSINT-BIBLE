@@ -195,8 +195,8 @@
       "name": "Egypt",
       "region": "Middle East",
       "file": "egypt.md",
-      "last_reviewed": null,
-      "exists": false,
+      "last_reviewed": "2026-09-30",
+      "exists": true,
       "sources": {
         "government": [
           {
@@ -272,15 +272,15 @@
       "name": "India",
       "region": "South Asia",
       "file": "india.md",
-      "last_reviewed": null,
-      "exists": false,
+      "last_reviewed": "2026-10-22",
+      "exists": true,
       "sources": {
         "government": [
           {
             "name": "MCA21 (Ministry of Corporate Affairs — company registry)",
             "url": "https://www.mca.gov.in",
             "status": "blocked",
-            "verified_on": "2026-09-30",
+            "verified_on": "2026-10-22",
             "note": "BLOCKED-403 — live in browser"
           },
           {
@@ -299,7 +299,7 @@
             "name": "CPPP e-procurement",
             "url": "https://eprocure.gov.in",
             "status": "ok",
-            "verified_on": "2026-09-30"
+            "verified_on": "2026-10-22"
           },
           {
             "name": "Sansad (Parliament digital library)",
@@ -1143,21 +1143,21 @@
       "name": "Indonesia",
       "region": "Asia-Pacific",
       "file": "indonesia.md",
-      "last_reviewed": null,
-      "exists": false,
+      "last_reviewed": "2026-10-22",
+      "exists": true,
       "sources": {
         "government": [
           {
             "name": "AHU Online (Ministry of Law — company registry)",
             "url": "https://ahu.go.id",
             "status": "ok",
-            "verified_on": "2026-09-30"
+            "verified_on": "2026-10-22"
           },
           {
             "name": "BPS (statistics)",
             "url": "https://www.bps.go.id",
             "status": "ok",
-            "verified_on": "2026-09-30"
+            "verified_on": "2026-10-22"
           },
           {
             "name": "IDX (Indonesia Stock Exchange)",
@@ -1364,15 +1364,15 @@
       "name": "Colombia",
       "region": "Americas",
       "file": "colombia.md",
-      "last_reviewed": null,
-      "exists": false,
+      "last_reviewed": "2026-10-22",
+      "exists": true,
       "sources": {
         "government": [
           {
             "name": "RUES (business register)",
             "url": "https://www.rues.org.co",
             "status": "ok",
-            "verified_on": "2026-09-30"
+            "verified_on": "2026-10-22"
           },
           {
             "name": "DIAN (tax and customs)",
@@ -1533,15 +1533,15 @@
       "name": "South Africa",
       "region": "Africa",
       "file": "south-africa.md",
-      "last_reviewed": null,
-      "exists": false,
+      "last_reviewed": "2026-10-22",
+      "exists": true,
       "sources": {
         "government": [
           {
             "name": "CIPC (companies and intellectual property)",
             "url": "https://www.cipc.co.za",
             "status": "ok",
-            "verified_on": "2026-09-30"
+            "verified_on": "2026-10-22"
           },
           {
             "name": "South African Revenue Service",
@@ -1559,7 +1559,7 @@
             "name": "Statistics South Africa",
             "url": "https://www.statssa.gov.za",
             "status": "ok",
-            "verified_on": "2026-09-30"
+            "verified_on": "2026-10-22"
           },
           {
             "name": "Department of Justice",
@@ -1589,15 +1589,15 @@
       "name": "Nigeria",
       "region": "Africa",
       "file": "nigeria.md",
-      "last_reviewed": null,
-      "exists": false,
+      "last_reviewed": "2026-10-22",
+      "exists": true,
       "sources": {
         "government": [
           {
             "name": "CAC (Corporate Affairs Commission)",
             "url": "https://www.cac.gov.ng",
             "status": "blocked",
-            "verified_on": "2026-09-30",
+            "verified_on": "2026-10-22",
             "note": "BLOCKED-403 — live in browser"
           },
           {
@@ -1719,8 +1719,8 @@
       "name": "United Arab Emirates",
       "region": "Middle East",
       "file": "united-arab-emirates.md",
-      "last_reviewed": null,
-      "exists": false,
+      "last_reviewed": "2026-10-22",
+      "exists": true,
       "sources": {
         "government": [
           {

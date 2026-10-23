@@ -43,24 +43,6 @@
       "region": "GLOBAL"
     },
     {
-      "id": "digitaldigging-osint",
-      "name": "OSINT Resources by Country v2.0",
-      "url": "https://github.com/paulpogoda/OSINT-for-countries-V2.0",
-      "category": "datasets",
-      "type": "dataset",
-      "license": "open-source",
-      "cost": "free",
-      "opensource": true,
-      "purpose": "Successor country OSINT collection by Henk van Ess; registries, cadastre, vehicle, people.",
-      "tags": [
-        "country",
-        "directory"
-      ],
-      "status": "verified",
-      "verified_on": "2026-09-30",
-      "region": "GLOBAL"
-    },
-    {
       "id": "cybdetective-osintmap",
       "name": "OSINT Map (Cyb Detective)",
       "url": "https://cybdetective.com/osintmap/",

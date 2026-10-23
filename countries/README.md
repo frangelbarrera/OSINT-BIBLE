@@ -11,6 +11,7 @@ This directory contains the country and regional research formerly embedded in t
 - [Mexico](./mexico.md)
 - [Argentina](./argentina.md)
 - [Canada](./canada.md)
+- [Colombia](./colombia.md)
 
 ### Western Europe
 
@@ -31,6 +32,7 @@ This directory contains the country and regional research formerly embedded in t
 - [China](./china.md)
 - [Korea (North & South)](./korea-north-and-south.md)
 - [Japan](./japan.md)
+- [Indonesia](./indonesia.md)
 
 ### Middle East
 
@@ -38,6 +40,17 @@ This directory contains the country and regional research formerly embedded in t
 - [Iran](./iran.md)
 - [Saudi Arabia](./saudi-arabia.md)
 - [Turkey](./turkey.md)
+- [Egypt](./egypt.md)
+- [United Arab Emirates](./united-arab-emirates.md)
+
+### South Asia
+
+- [India](./india.md)
+
+### Africa
+
+- [Nigeria](./nigeria.md)
+- [South Africa](./south-africa.md)
 
 ### Oceania
 
