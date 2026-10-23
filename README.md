@@ -1,6 +1,6 @@
-﻿# 🕵️‍♂️ OSINT Bible 2026
+# 🕵️‍♂️ OSINT Bible 2026
 > Compilation, procedures, tools and ethics for open source research
-[![Link health](https://img.shields.io/badge/links-543%2F729%20ok-brightgreen)](audit/latest.md)
+[Link audit](audit/latest.md)
 [Command-line utilities](scripts/README.md) · [Link audit details](audit/latest.md)
 
 ## ⚠️ Ethical Disclaimer
@@ -109,13 +109,12 @@ graph TD
 
 ### 4.2 Alternative Search Engines
 - [DuckDuckGo "bangs"](https://duckduckgo.com/bang) → `!archive`
-- [Yandex](https://yandex.com) → best results CIS
+- [Yandex](https://yandex.com) → regional coverage varies; verify results and applicable terms
 - [Baidu](https://baidu.com) → Asia
-- [Startpage](https://startpage.com) → no logs
+- [Startpage](https://startpage.com) → privacy-oriented search interface; review its current policy
 - [Shodan](https://shodan.io) → IoT, ICS, SCADA
 - [Censys](https://censys.com/) → cert + banner
-- [FOFA](https://fofa.info) → China, free API
-- [BinaryEdge](https://binaryedge.io) → global scanning
+- [FOFA](https://fofa.info) → internet asset search; access and API limits vary
 - [Hunter.io](https://hunter.io) → corporate emails
 - [PublicWWW](https://publicwww.com) → search in source code
 - [SearchCode](https://searchcode.com) → search in 75B lines of code
@@ -250,12 +249,15 @@ graph TD
 
 ### 4.2.1 Verified addition (2026-09)
 
-| Resource | Stars | Last push | What it adds |
-|---|---|---|---|
-| [awesome-censys-queries](https://github.com/thehappydinoa/awesome-censys-queries) | 1,244 | 2026-07 | Curated set of non-obvious Censys queries for asset discovery |
+| Resource | What it adds |
+|---|---|
+| [awesome-censys-queries](https://github.com/thehappydinoa/awesome-censys-queries) | Curated set of Censys queries for asset discovery; verify current repository support |
 
 ### 4.3 Archives and snapshots
 - [Wayback Machine](https://archive.org/web)
+- [Wayback Availability API](https://archive.org/help/wayback_api.php) → check whether a URL has an archived capture
+- [Wayback CDX Server](https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server) → query and analyse capture indexes
+- [Evidence preservation workflow](docs/evidence-preservation.md) → synthetic manifest and chain-of-custody checklist
 - [CachedView](https://cachedview.com) (Google + Archive.is)
 - [URLScan](https://urlscan.io) → capture + DOM + requests
 - [Ubikron](https://ubikron.com ) → AI-powered evidence collection & entity extraction
@@ -310,7 +312,7 @@ graph TD
 10. **Find Instagram User Id** - Link: [Find Instagram User Id](https://www.codeofaninja.com/tools/find-instagram-user-id/) - Description: This tool called "Find Instagram User ID" provides an easy way for developers and designers to get Instagram account numeric ID by username.
 11. **Instahunt** - Link: [Instahunt](https://instahunt.huntintel.io/) - Description: Easily find social media posts surrounding a location.
 12. **Musicaldown** - Link: [Musicaldown](https://musicaldown.com) - Description: web.
-13. **IGDataHub** - Link: [IGDataHub](https://igdatahub.com/) - Description: Follower count history for the Instagram accounts it tracks (about one reading a day, shown as a growth chart on each profile report), plus engagement rate and top posts per profile and weekly follower-growth rankings. Free to view without login; the full per-reading CSV is paid.
+13. **IGDataHub** - Link: [IGDataHub](https://igdatahub.com/) - Description: Follower count history for the public Instagram accounts it tracks, built from its own repeated readings and shown as a growth chart on each profile report, plus engagement rate and top posts per profile and weekly follower-growth rankings. Coverage depends on publicly available Instagram data and on the service's current accessibility. The free lookup and reports need no login; the full per-reading CSV export is paid.
 
 ### 5.3 LinkedIn
 1. **RecruitEm** - Link: [RecruitEm](https://recruitin.net/) - Description: Allows you to search social media profiles. It helps recruiters to create a Google boolean string that searches all public profiles.
@@ -325,7 +327,7 @@ graph TD
 10. **LinkedInt** - Link: [LinkedInt](https://github.com/vysecurity/LinkedInt) - Description: Providing you with Linkedin Intelligence.
 11. **InSpy** - Link: [InSpy](https://github.com/jobroche/InSpy) - Description: InSpy is a python based LinkedIn enumeration tool.
 12. **CrossLinked** - Link: [CrossLinked](https://github.com/m8sec/CrossLinked) - Description: CrossLinked is a LinkedIn enumeration tool that uses search engine scraping to collect valid employee names from an organization.
-13. **Hunter.io** - Link: [Hunter.io](https://hunter.io) - Description: Find and verify corporate email patterns. 25 free searches per month.
+13. **Hunter.io** - Link: [Hunter.io](https://hunter.io) - Description: Find and verify corporate email patterns; current access limits vary.
 
 ### 5.4 Twitter/X
 1. **TweetDeck** - Link: [TweetDeck](https://tweetdeck.twitter.com/) - Description: Offers a more convenient Twitter experience by allowing you to view multiple timelines in one easy interface.
@@ -391,7 +393,7 @@ graph TD
 4. **Find Github User ID** - Link: [Find Github User ID](http://caius.github.io/github_id) - Description: A web tool for finding the unique identifier (ID) of a GitHub user.
 5. **GH Archive** - Link: [GH Archive](http://www.gharchive.org) - Description: A project that provides a public dataset of GitHub activity, including events and metadata.
 9. **Github Dorks** - Link: [Github Dorks](https://github.com/techgaun/github-dorks) - Description: A collection of GitHub dorks, which are search queries to find sensitive information in repositories.
-10. **Github Stars** - Link: [Github Stars](http://githubstars.com) - Description: A website that showcases GitHub repositories with the most stars and popularity.
+10. **GitHub repository search** - Use GitHub search and repository topics to discover public projects; verify the repository owner and activity before relying on it.
 11. **Github Trending RSS** - Link: [Github Trending RSS](https://mshibanami.github.io/GitHubTrendingRSS) - Description: An RSS feed generator for trending repositories on GitHub.
 12. **Github Username Search Engine** - Link: [Github Username Search Engine](https://jonnygovish.github.io/Github-username-search-engine) - Description: A search engine to find GitHub usernames based on various filters and criteria.
 13. **Github Username Search Engine** - Link: [Github Username Search Engine](https://githubnotes-47071.firebaseapp.com/#/?_k=n0bgxn) - Description: Another search engine to find GitHub usernames with advanced filtering options.
@@ -532,7 +534,7 @@ python3 gitgot.py -q "ORGNAME"
 
 ### 5.13 ONLYFANS
 1. **OnlyFans Finder** - Link: [The Favourite OnlyFans search](https://onlyfansfinder.co/) - Description: The tools allow easy searching via advanced filtering capabilities and sorting functionality, making it easy to access desired material.
-2. **OnlyFam** - Link: [OnlyFam](https://onlyfam.com) - Description: OnlyFans Search & Model Finder - Find Creators in the World's Largest OnlyFans Database
+2. **OnlyFam** - Link: [OnlyFam](https://onlyfam.com) - Description: Public-profile search service; availability and coverage may change.
 3. **OnlyFinder** - Link: [OnlyFinder](https://onlyfinder.com/) - Description: OnlyFans Search Engine - OnlyFans Account Finder.
 4. **OnlySearch** - Link: [OnlySearch](https://onlysearch.co/) - Description: Find OnlyFans profiles by searching for key words.
 5. **Sotugas** - Link: [SóTugas](https://sotugas.com/) - Description: Encontra Contas do OnlyFans Portugal 🇵🇹.
@@ -541,6 +543,7 @@ python3 gitgot.py -q "ORGNAME"
 8. **Hubite** - Link: [Hubite](https://hubite.com/en/onlyfans-search/) - Description: Advanced OnlyFans Search Engine.
 9. **Similarfans** - Link: [Similarfans](https://similarfans.com/) - Description: Blog for OnlyFans content creators.
 10. **Fansearch** - Link: [Fansearch](https://www.fansearch.com/) - Description: Fansearch is the best OnlyFans Finder to search in 3,000,000 OnlyFans Accounts.
+11. **OnlyFans Finders** - Link: [OnlyFans Finders](https://onlyfansfinders.com/) - Description: Free search of public OnlyFans profiles (published by the creators themselves) by city, category and price; profiles re-checked against OnlyFans monthly. No private or leaked content. Removal: [privacy policy](https://onlyfansfinders.com/privacy.html#removal).
 
 ### 5.14 TikTok
 1. **Mavekite** - Link: [Mavekite](https://mavekite.com/) - Description: Search the profile using username.
@@ -586,9 +589,9 @@ exiftool -all= foto_sanitizada.jpg
 
 ### 6.2.1 Verified addition (2026-09)
 
-| Tool | Stars | Language | Last push | What it adds |
-|---|---|---|---|---|
-| [GeoWiFi](https://github.com/GONZOsint/geowifi) | 1,510 | Python | 2026-09 | Geolocates a BSSID or SSID against public Wi-Fi geolocation databases |
+| Tool | What it adds |
+|---|---|
+| [GeoWiFi](https://github.com/GONZOsint/geowifi) | Geolocates a BSSID or SSID against public Wi-Fi geolocation databases |
 
 ### 6.3 Satellite / Drone
 - [Copernicus Browser](https://browser.dataspace.copernicus.eu) → Sentinel-1/2/3/5P, free browser
@@ -674,9 +677,9 @@ Following the withdrawal of Russian troops from Bucha (Ukraine) in March 2022, i
 |---|---|---|
 | Subdomains | Amass | `amass enum -d target.com -o subs.txt` |
 | Certificates | CRT.sh | `curl https://crt.sh/?q=%25.target.com&output=json` |
-| Historical DNS | [SecurityTrails](https://securitytrails.com) | Free API 50/month |
-| Tech stack | [StackScan](https://www.stackscan.com) | 399M+ sites, reverse lookup by technology |
-| Tech stack | [looot-techstack](https://github.com/loootai/looot-techstack) | Self-hosted (MIT), 3 providers side by side per domain, reverse lookup by technology; paid looot API, ~$0.02/domain |
+| Historical DNS | [SecurityTrails](https://securitytrails.com) | Historical DNS service; current access limits vary |
+| Tech stack | [StackScan](https://www.stackscan.com) | Reverse lookup by technology; current coverage varies |
+| Tech stack | [looot-techstack](https://github.com/loootai/looot-techstack) | Self-hosted (MIT), reverse lookup by technology; paid looot API may be available |
 | Neighbor IPs | [BGP.he](https://bgp.he.net) | CIDR |
 | Reputation | [VirusTotal](https://virustotal.com) | `vt ip_info <ip>` |
 | Quick scan | [Nmap-online](https://nmap.online) | no VPN |
@@ -735,7 +738,6 @@ Following the withdrawal of Russian troops from Bucha (Ukraine) in March 2022, i
 | Spamhaus | Spamhaus | `https://www.spamhaus.org/` |
 | Spur | Spur | `https://spur.us` |
 | SSL Blacklist | SSL Blacklist | `https://sslbl.abuse.ch/` |
-| Statvoo | Statvoo | `https://statvoo.com/dl/top-1million-sites.csv.zip` |
 | Strongarm | Strongarm | `https://strongarm.io` |
 | SIEM Rules | SIEM Rules | `https://www.siemrules.com` |
 | Talos | Talos | `https://www.talosintelligence.com/` |
@@ -862,7 +864,7 @@ recon-ng
 ---
 
 ## 10. Report Templates
-Folder `/templates/` in your repo. Mandatory YAML front-matter:
+Folder `/templates/` in your repo. The preservation workflow and synthetic manifest are documented in [`docs/evidence-preservation.md`](docs/evidence-preservation.md). Mandatory YAML front-matter:
 
 ```markdown
 ---
@@ -949,15 +951,15 @@ status: draft # draft | reviewed | delivered
 ---
 
 ## 13. AI Intelligence
-**AI-powered tools for OSINT 2025:**
+**AI-powered tools for OSINT:**
 
 | Tool | Function | URL | Note |
 |---|---|---|---|
-| **anonchatgpt** | Anonymous ChatGPT client | https://anonchatgpt.com | No account needed |
+| **anonchatgpt** | Chat client; access and account requirements may change | https://anonchatgpt.com | Check current terms |
 | **ai-toolkit** | Essential AI toolkit for journalists | https://huggingface.co/spaces/JournalistsonHF/ai-toolkit | Free and open-source |
 | **ChatPDF** | Ask questions to PDFs | https://www.chatpdf.com/ | Simple and free |
 | **Monica** | ChatGPT copilot in Chrome | https://monica.im/ | Summarize, translate |
-| **BabelX** | Multilingual OSINT platform | https://www.babelstreet.com | 200+ languages |
+| **BabelX** | Multilingual OSINT platform | https://www.babelstreet.com | Language coverage varies |
 | **Fivecast** | Predictive analysis with ML | https://www.fivecast.com | Real-time threat detection |
 | **HyperVerge** | Deepfake detection | https://hyperverge.co | AI biometric verification |
 | **ShadowDragon** | Social Darkint with AI | https://shadowdragon.io | Behavior analysis |
@@ -972,7 +974,7 @@ status: draft # draft | reviewed | delivered
 ### 13.1 Curated AI directories (cross-references)
 | Directory | Coverage | URL |
 |---|---|---|
-| **Artificial-Intelligence-Universe** | 800+ AI tools | https://github.com/frangelbarrera/Artificial-Intelligence-Universe |
+| **Artificial-Intelligence-Universe** | Curated AI tool directory; coverage changes over time | https://github.com/frangelbarrera/Artificial-Intelligence-Universe |
 | **awesome-ai-agents** | 132 AI agents, 22 categories | https://github.com/frangelbarrera/awesome-ai-agents |
 | **Awesome-Hacking-with-AI** | AI-powered offensive security | https://github.com/frangelbarrera/Awesome-Hacking-with-AI |
 | **osint-agent-skills** | MCP server for OSINT agents | https://github.com/frangelbarrera/osint-agent-skills |
@@ -1027,7 +1029,7 @@ import holehe
 import requests
 
 def check_email_accounts(email):
-    """Checks in 120+ platforms"""
+    """Checks supported platforms; coverage changes over time."""
     modules = holehe.import_submodules('holehe.modules')
     for module in modules:
         # Execute verification
@@ -1042,13 +1044,13 @@ def check_email_accounts(email):
 
 | Platform | Database | URL | Access |
 |---|---|---|---|
-| **DeHashed** | 17+ billion records | https://dehashed.com | Freemium |
+| **DeHashed** | Breach and credential intelligence service; access and coverage vary | https://dehashed.com | Freemium |
 | **Snusbase** | Recent breaches | https://snusbase.com | Paid |
 | **LeakCheck** | Real-time search | https://leakcheck.io | Freemium |
 | **Intelligence X** | Dark web + breaches | https://intelx.io | Freemium |
 | **h8mail** | Local breach search | GitHub | Free |
 | **Hudson Rock** | Infostealer intelligence | https://www.hudsonrock.com/threat-intelligence-cybercrime-tools | Free |
-| **LeakRadar** | 290B+ stealer logs & breaches | https://leakradar.io | Freemium |
+| **LeakRadar** | Stealer-log and breach intelligence service; coverage varies | https://leakradar.io | Freemium |
 | **CheckLeaked** | Real-time email/username/phone/password search | https://checkleaked.cc | Freemium |
 
 **Quick command:**
@@ -1101,7 +1103,6 @@ h8mail -t targets.txt -bc local_breach_folder/ --power-all
 | **FlightRadar24** | Live tracking | https://www.flightradar24.com |
 | **ADS-B Exchange** | No military filters | https://globe.adsbexchange.com |
 | **FlightAware** | Flight history | https://flightaware.com |
-| **Phantom Tide** | Restricted airspace, maritime, and incident map | https://phantom.labs.jamessawyer.co.uk |
 | **PiAware (Raspberry Pi)** | Own ADS-B receiver | https://flightaware.com/adsb/piaware |
 
 **Setup of homemade ADS-B receiver:**
@@ -1167,22 +1168,22 @@ sudo systemctl restart piaware
 
 ### 20.5 Verified addition (2026-09)
 
-| Tool | Stars | Language | Last push | What it adds |
-|---|---|---|---|---|
-| [SingleFile](https://github.com/gildas-lormeau/SingleFile) | 22,484 | JavaScript | 2026-09 | Saves a faithful, self-contained copy of a full web page for archival and verification |
+| Tool | What it adds |
+|---|---|
+| [SingleFile](https://github.com/gildas-lormeau/SingleFile) | Saves a faithful, self-contained copy of a full web page for archival and verification |
 
 ## 21. Username Enumeration
 
 **Beyond Maigret and Sherlock:**
 
-| Tool | Platforms | URL | Highlight |
+| Tool | Coverage / description | URL | Highlight |
 |---|---|---|---|
-| **Sherlock** | 400+ platforms | https://github.com/sherlock-project/sherlock | Faster |
-| **Maigret** | 500+ platforms | https://github.com/soxoj/maigret | More precise |
-| **WhatsMyName** | 600+ platforms | https://github.com/WebBreacher/WhatsMyName | Most complete |
-| **Snoop** | 320+ (RU/CIS emphasis) | https://github.com/snooppr/snoop | Russian/CIS |
-| **Blackbird** | 200+ with PDF report | https://github.com/antoniaci/blackbird | Export |
-| **UserSearch** | 600+ platforms | https://usersearch.org | Largest Reverse User Search Online |
+| **Sherlock** | Broad platform coverage; verify current site support | https://github.com/sherlock-project/sherlock | Username search |
+| **Maigret** | Broad platform coverage; verify current site support | https://github.com/soxoj/maigret | Username search |
+| **WhatsMyName** | Community-maintained username-site dataset; coverage changes over time | https://github.com/WebBreacher/WhatsMyName | Username search |
+| **Snoop** | Username search with a Russian/CIS emphasis; verify current site support | https://github.com/snooppr/snoop | Regional coverage |
+| **Blackbird** | Username search with report export | https://github.com/antoniaci/blackbird | Export |
+| **UserSearch** | Reverse username search; coverage and access change over time | https://usersearch.org | Username search |
 
 **Speed comparison:**
 ```bash
@@ -1263,13 +1264,13 @@ masscan: ~5 seconds (less detail)
 
 ### 24.5 Verified additions (2026-09)
 
-| Tool | Stars | Language | Last push | What it adds |
-|---|---|---|---|---|
-| [bbot](https://github.com/blacklanternsecurity/bbot) | 10,623 | Python | 2026-09 | Recursive internet scanner with module chaining |
-| [reNgine](https://github.com/yogeshojha/rengine) | 8,860 | HTML | 2026-09 | Web recon framework with a database-driven UI and configurable scan engines |
-| [reconFTW](https://github.com/six2dez/reconftw) | 8,145 | Shell | 2026-09 | Automated recon pipeline that chains best-in-class tools per phase |
-| [Osmedeus](https://github.com/j3ssie/osmedeus) | 6,579 | Go | 2026-09 | Workflow engine for offensive security and recon orchestration |
-| [IVRE](https://github.com/ivre/ivre) | 4,154 | Python | 2026-09 | Self-hosted network reconnaissance framework for scans you own |
+| Tool | What it adds |
+|---|---|
+| [bbot](https://github.com/blacklanternsecurity/bbot) | Recursive internet scanner with module chaining |
+| [reNgine](https://github.com/yogeshojha/rengine) | Web recon framework with a database-driven UI and configurable scan engines |
+| [reconFTW](https://github.com/six2dez/reconftw) | Automated recon pipeline that chains tools by phase |
+| [Osmedeus](https://github.com/j3ssie/osmedeus) | Workflow engine for offensive security and recon orchestration |
+| [IVRE](https://github.com/ivre/ivre) | Self-hosted network reconnaissance framework for scans you own |
 
 ## 25. Dark Web
 
@@ -1303,7 +1304,7 @@ masscan: ~5 seconds (less detail)
 |---|---|---|---|
 | **Abster Intelligence** | TypeScript / Next.js | https://github.com/frangelbarrera/Abster-Intelligence | Local-first, graph engine, BYOK-LLM, privacy-first |
 | **Ubikron** | Browser Ext | https://ubikron.com | AI-powered case management & entity extraction |
-| **SpiderFoot** | Python | https://github.com/smicallef/spiderfoot | Total automation |
+| **SpiderFoot** | Python | https://github.com/smicallef/spiderfoot | Modular automation |
 | **Recon-ng** | Python | https://github.com/lanmaster53/recon-ng | Modular |
 | **theHarvester** | Python | https://github.com/laramies/theHarvester | Email/subdomain |
 | **Maltego** | Java | https://www.maltego.com | Visualization |
@@ -1320,13 +1321,13 @@ python3 sf.py -l 127.0.0.1:5001
 
 ### 26.9 Verified additions (2026-09)
 
-| Tool | Stars | Language | Last push | What it adds |
-|---|---|---|---|---|
-| [web-check](https://github.com/lissy93/web-check) | 34,921 | TypeScript | 2026-09 | All-in-one OSINT dashboard for any website: DNS, headers, TLS, technology stack and threat intel |
-| [social-analyzer](https://github.com/qeeqbox/social-analyzer) | 24,113 | JavaScript | 2026-01 | Detects a person's profile across 1,000+ social sites, with API, CLI and web app |
-| [flowsint](https://github.com/reconurge/flowsint) | 8,933 | TypeScript | 2026-09 | Graph-based investigation platform: entities, relationships and visual analysis |
-| [osint_stuff_tool_collection](https://github.com/cipher387/osint_stuff_tool_collection) | 8,874 | HTML | 2026-05 | Several hundred online OSINT tools, catalogued by task |
-| [OpenOSINT](https://github.com/OpenOSINT/OpenOSINT) | 1,645 | Python | 2026-09 | OSINT agent with REPL, MCP server and CLI; 20 tools, works with local models |
+| Tool | What it adds |
+|---|---|
+| [web-check](https://github.com/lissy93/web-check) | All-in-one OSINT dashboard for any website: DNS, headers, TLS, technology stack and threat intel |
+| [social-analyzer](https://github.com/qeeqbox/social-analyzer) | Detects possible profiles across supported social sites; coverage changes over time |
+| [flowsint](https://github.com/reconurge/flowsint) | Graph-based investigation platform: entities, relationships and visual analysis |
+| [osint_stuff_tool_collection](https://github.com/cipher387/osint_stuff_tool_collection) | Several hundred online OSINT tools, catalogued by task |
+| [OpenOSINT](https://github.com/OpenOSINT/OpenOSINT) | OSINT agent with REPL, MCP server and CLI; capabilities depend on the current release |
 
 ## 27. Advanced Maltego
 
@@ -1334,7 +1335,7 @@ python3 sf.py -l 127.0.0.1:5001
 
 | Transform Hub | Function | Note |
 |---|---|---|
-| **Standard Transforms** | 150+ official transforms | Free |
+| **Standard Transforms** | Official transform collection; verify current availability | Free |
 | **Shodan Transform** | Shodan integration | Requires API |
 | **VirusTotal** | Malware/URL analysis | Requires API |
 | **Netlas Transform** | Similar to Shodan | https://netlas.io |
@@ -1404,7 +1405,7 @@ PHASE 5: DISSEMINATION
 
 ## 29. Advanced Google Dorks
 
-**2025 Dorks (specific):**
+**Dorks for authorized exposure assessment:**
 
 ```
 # Sensitive information leaks
@@ -1567,10 +1568,10 @@ site:*.*.target.com
 
 ### 33.5 CTI correlation additions (2026-09)
 
-| Platform | Stars | Language | Last push | What it adds |
-|---|---|---|---|---|
-| [IntelOwl](https://github.com/intelowlproject/IntelOwl) | 4,728 | Python | 2026-09 | Scalable CTI at volume: enriches observables through dozens of analyzers and connectors |
-| [harpoon](https://github.com/Te-k/harpoon) | 1,293 | Python | 2026-09 | CLI combining open-source intelligence and threat intelligence lookups |
+| Platform | What it adds |
+|---|---|
+| [IntelOwl](https://github.com/intelowlproject/IntelOwl) | Scalable CTI at volume: enriches observables through dozens of analyzers and connectors |
+| [harpoon](https://github.com/Te-k/harpoon) | CLI combining open-source intelligence and threat intelligence lookups |
 
 ## 34. ICS/OT & Critical-Infrastructure OSINT
 
@@ -1624,7 +1625,7 @@ port:4840                  # OPC UA
 ### 35.1 MCP Servers & Skill Packs
 | Resource | Type | URL |
 |---|---|---|
-| **osint-agent-skills** (author's) | 22 MCP tools + 295-line system prompt + 9 pivot playbooks | https://github.com/frangelbarrera/osint-agent-skills |
+| **osint-agent-skills** (author's) | OSINT skills and MCP-compatible workflows; inspect the current repository before use | https://github.com/frangelbarrera/osint-agent-skills |
 | **PulseMCP** | MCP server directory | https://www.pulsemcp.com |
 | **MCP Server Finder (Glama)** | Directory | https://glama.ai/mcp/servers |
 | **awesome-mcp-servers** | Curated list | https://github.com/punkpeye/awesome-mcp-servers |
@@ -1646,7 +1647,18 @@ port:4840                  # OPC UA
 | **Dify** | Python | https://dify.ai | Open-source LLM app platform |
 | **secure-agent-orchestrator** (author's) | Python | https://github.com/frangelbarrera/secure-agent-orchestrator | Lightweight SOAR for distributed security agents |
 
-### 35.4 Local & Sovereign LLMs (OPSEC for sensitive investigations)
+### 35.4 Agent safety baseline
+
+Treat every page, document, post and search result as untrusted input. External content can contain instructions intended to redirect an agent, disclose secrets or trigger an unauthorized action.
+
+- Use least-privilege MCP servers and keep write, messaging and shell tools disabled unless the task explicitly requires them.
+- Never place API keys, cookies or personal data in prompts, retrieved documents or public issue comments.
+- Require human approval before sending messages, downloading large collections, changing accounts or executing commands.
+- Keep source text separate from system instructions and mark every model-generated claim for independent verification.
+- Log tool calls, URLs, timestamps and failures without storing unnecessary sensitive content.
+- Review [OWASP's LLM Top 10 for 2025](https://genai.owasp.org/llm-top-10/), especially prompt injection, sensitive information disclosure, supply chain, excessive agency and misinformation.
+
+### 35.5 Local & Sovereign LLMs (OPSEC for sensitive investigations)
 | Tool | Type | URL |
 |---|---|---|
 | **Ollama** | Local LLM runner | https://ollama.com |
@@ -1654,7 +1666,7 @@ port:4840                  # OPC UA
 | **vLLM** | Production server | https://github.com/vllm-project/vllm |
 | **Jan** | Offline assistant | https://jan.ai |
 
-### 35.5 Quick Start (Claude Code)
+### 35.6 Quick Start (Claude Code)
 ```bash
 # 1. Clone the skills repo
 git clone https://github.com/frangelbarrera/osint-agent-skills.git
@@ -1719,7 +1731,7 @@ cd osint-agent-skills
 | Sayari | https://sayari.com | Commercial corporate-network intel |
 | Equasis | https://www.equasis.org | Global merchant vessel registry |
 | Arkham Intelligence | https://info.arkm.com/ | On-chain wallet attribution |
-| Dune Analytics | https://dune.com | SQL across 100+ blockchains (free tier) |
+| Dune Analytics | https://dune.com | SQL over supported blockchain datasets (free tier) |
 | Nansen | https://nansen.ai | Smart-money signals ($49/mo) |
 | Arbiscan | https://arbiscan.io | Arbitrum L2 explorer |
 | Basescan | https://basescan.org | Base L2 explorer |
@@ -1727,7 +1739,7 @@ cd osint-agent-skills
 
 ### 36.3 Common Errors in Financial OSINT
 
-1. **Confusing director with UBO.** A director signs minutes; a UBO economically controls. In offshore shells the director is usually a professional nominee with 200+ companies.
+1. **Confusing director with UBO.** A director signs minutes; a UBO economically controls. In offshore structures, a director may be a professional nominee; verify the specific company and source.
 2. **Not handling transliterations.** Mohammed / Muhammad / Mohamad / Mehmet — exact match fails. Use ISO 9 (Russian) or Hanyu Pinyin (Chinese).
 3. **Trusting PSC Register as ground truth.** The UK PSC Register is self-reported; real UBOs hide behind nominees. Always cross-check with ICIJ.
 4. **Treating sanctions lists as binary.** "Not listed" ≠ "clean". Designation takes months–years. Use adverse media + peer designations.
@@ -1787,7 +1799,7 @@ cd osint-agent-skills
 
 **Rule 1:** Never use real personal identity. Create a consistent fictitious identity (age, interests, plausible location).
 
-**Rule 2:** The sock puppet needs a "digital history" — it cannot be born the day of the investigation. Buy accounts with 1–2 years of age or cultivate identities in standby.
+**Rule 2:** Keep research identities separate from personal accounts. Do not buy, borrow or impersonate accounts; follow platform rules and document the reason for using a separate identity.
 
 **Rule 3:** Human behaviour. Do not do 200 searches in an hour. Respect plausible hours. Interact with irrelevant content to mix signal.
 
@@ -1814,7 +1826,7 @@ cd osint-agent-skills
 
 | Tool | URL | Function |
 |---|---|---|
-| GrayhatWarfare | https://buckets.grayhatwarfare.com | 712K+ indexed buckets (2K free, premium paid) |
+| GrayhatWarfare | https://buckets.grayhatwarfare.com | Indexed bucket search; access and quotas vary |
 | osint.sh/buckets | https://osint.sh/buckets | Keyword search across AWS+Azure buckets |
 | cloud_enum | https://github.com/initstring/cloud_enum | Multi-cloud enumeration (AWS / Azure / GCP) |
 | GrayhatWarfare Shorteners | https://grayhatwarfare.com | URL shortener enumeration |
@@ -1841,8 +1853,8 @@ site:amazonaws.com filetype:pdf "confidential"
 
 ### 38.4 Legal Considerations
 
-- **Accessing a public bucket is legitimate.** If the bucket is open, it is the owner's responsibility.
-- **Downloading sensitive data (PII, credentials) and publishing it** = illegal in most jurisdictions.
+- **A public bucket is not blanket authorization.** Confirm scope and avoid enumeration or bulk downloading.
+- **Do not download or publish sensitive data (PII, credentials or confidential files).** Record the minimum necessary evidence and use responsible disclosure.
 - **Report to the owner** via responsible disclosure (security.txt of the domain).
 - **Do not use found credentials** to escalate access. That crosses from OSINT into attack.
 
@@ -1892,7 +1904,9 @@ site:amazonaws.com filetype:pdf "confidential"
 
 | Tool | URL | Function |
 |---|---|---|
-| Bluesky Firehose (official) | https://docs.bsky.app/docs/advanced-guides/firehose | Authenticated stream of ALL events |
+| Bluesky Firehose (official) | https://docs.bsky.app/docs/advanced-guides/firehose | Public event stream documentation |
+| AT Protocol public firehose | https://atproto.com/ | Public event stream and protocol documentation |
+| Jetstream | https://github.com/bluesky-social/jetstream | JSON-oriented stream for selected AT Protocol events |
 | AT Protocol SDK | https://atproto.blue/en/latest/atproto_firehose/index.html | Python SDK for the firehose |
 | Reaper Social | https://reaper.social | Mastodon / Fediverse search & investigation |
 | DigitalStakeout Bluesky monitoring | https://www.digitalstakeout.com/blog/bluesky-firehose-integration | Commercial monitoring |
@@ -1900,7 +1914,7 @@ site:amazonaws.com filetype:pdf "confidential"
 
 ### 40.2 Minimum Methodology
 
-1. **Bluesky real-time:** subscribe to the firehose with a keyword/user filter. For historical data, Bluesky has no native search API — use third-party (Reaper Social).
+1. **Bluesky real-time:** subscribe to the public firehose or Jetstream and filter locally by DID, record type or keyword. For historical data, use a documented third-party index and record its coverage limits.
 2. **Mastodon:** each instance has its own API. Federated search is limited. List instances relevant to the target (e.g. `infosec.exchange`, `mas.to`).
 3. **Nostr:** NIP-05 verification exposes domain-linked identity. Allows pivoting from handle to verified domain.
 4. **Farcaster:** Warpcast is the main client. Public API for feeds.
@@ -1919,10 +1933,10 @@ site:amazonaws.com filetype:pdf "confidential"
 
 | Tool | URL | Function |
 |---|---|---|
-| Have I Been Pwned | https://haveibeenpwned.com | Free personal breach check (1018+ sites) |
+| Have I Been Pwned | https://haveibeenpwned.com | Personal breach check; current coverage is published by the service |
 | DeHashed | https://dehashed.com | Deep-web scans (freemium) |
 | Intelligence X | https://intelx.io | Dark web + breaches |
-| JustDeleteMe | https://justdeleteme.xyz | Direct deletion links for 500+ services |
+| JustDeleteMe | https://justdeleteme.xyz | Direct deletion links for supported services |
 | JustGetMyData | https://justgetmydata.com | GDPR data request links |
 | Hudson Rock | https://www.hudsonrock.com/threat-intelligence-cybercrime-tools | Infostealer free lookup |
 
@@ -2000,9 +2014,9 @@ site:amazonaws.com filetype:pdf "confidential"
 
 ### 43.2 Satellite OSINT Workflow — 7 Steps
 
-1. **Start with Copernicus Browser** (free, historical archive from 2015+, Sentinel-2 at 10 m resolution).
+1. **Start with Copernicus Browser** (free access to Sentinel imagery and historical products; verify current resolution and coverage).
 2. **If you need near-real-time:** NASA Worldview (latency <3 hours for MODIS).
-3. **For new tasking or sub-meter resolution:** SkyFi ($15+ per selective image, multi-provider).
+3. **For new tasking or sub-meter resolution:** use a commercial imagery marketplace such as SkyFi and verify current pricing, licensing and provider coverage.
 4. **Before publishing:** verify the provider's EULA (Planet/Maxar may revoke publication rights).
 5. **Document source + timestamp + cloud cover %** for every image used.
 6. **For chronolocation:** combine with historical imagery from Google Earth Pro (free).
@@ -2015,9 +2029,9 @@ site:amazonaws.com filetype:pdf "confidential"
 
 ---
 
-## 44. C2PA + SynthID + Deepfake Detection 2026
+## 44. C2PA + SynthID + Deepfake Detection
 
-> **Industrial milestone (May–August 2026):** OpenAI joined the C2PA steering committee and adopted Google DeepMind's SynthID. Google announced native C2PA + SynthID verification in Search and Chrome (Google I/O 2026). Reality Defender was named "Market Shaper" by Gartner. This is the industry's scalable response to the deepfake arms race.
+> C2PA provides provenance signals for digital media. A valid credential can help establish a recorded history, but it is not by itself proof that the content is true or that the depicted event occurred. Use the current [C2PA specification](https://spec.c2pa.org/specifications/specifications/2.4/index.html) and [security considerations](https://spec.c2pa.org/specifications/specifications/2.4/security/Security_Considerations.html).
 
 ### 44.1 Verified Standards & Tools
 
@@ -2026,7 +2040,7 @@ site:amazonaws.com filetype:pdf "confidential"
 | C2PA viewer | https://c2paviewer.com | Visual verifier of C2PA manifests |
 | Content Credentials | https://contentcredentials.org | C2PA provenance ecosystem |
 | SynthID (Google DeepMind) | https://deepmind.google/models/synthid/ | AI content watermarking |
-| Reality Defender | https://www.realitydefender.com | Deepfake detection (free API 50/mo) |
+| Reality Defender | https://www.realitydefender.com | Deepfake detection service; access and quotas vary |
 | Truepic | https://truepic.com | Content credentials platform |
 | Sensity AI | https://sensity.ai | Deepfake detection |
 | C2PA open-source SDK | https://opensource.contentauthenticity.org | Open-source Content Credentials tooling |
@@ -2035,10 +2049,10 @@ site:amazonaws.com filetype:pdf "confidential"
 
 ### 44.2 Layered Verification Methodology
 
-1. **Verify C2PA Content Credentials** with [C2PA Viewer](https://c2paviewer.com) before any analysis.
+1. **Check for C2PA Content Credentials** with a current verifier before analysis; treat them as provenance evidence, not proof of truth.
 2. **Check for SynthID signals** if the content was produced by a supported Google model; treat the result as probabilistic, not conclusive.
 3. **If no credentials, run Reality Defender / Sensity** for forensic analysis.
-4. **Document absence of credentials** as an indicator (not proof) of manipulation.
+4. **Document absence of credentials** as an unknown or limitation, not proof of manipulation.
 5. **Cross-check with reverse image search** (Google Lens, Yandex, TinEye).
 6. **For video:** extract keyframes with FFmpeg and analyse each one.
 
@@ -2304,12 +2318,14 @@ The country research is organized as individual Markdown files in [`countries/`]
 
 | Region | Countries | Directory |
 |---|---|---|
-| Americas | [United States](./countries/united-states.md), [Brazil](./countries/brazil.md), [Mexico](./countries/mexico.md), [Argentina](./countries/argentina.md), [Canada](./countries/canada.md) | [`countries/`](./countries/) |
+| Americas | [United States](./countries/united-states.md), [Brazil](./countries/brazil.md), [Mexico](./countries/mexico.md), [Argentina](./countries/argentina.md), [Canada](./countries/canada.md), [Colombia](./countries/colombia.md) | [`countries/`](./countries/) |
 | Western Europe | [United Kingdom](./countries/united-kingdom.md), [Germany](./countries/germany.md), [France](./countries/france.md), [Spain](./countries/spain.md), [Italy](./countries/italy.md), [Poland](./countries/poland.md) | [`countries/`](./countries/) |
 | Eastern Europe & Russia | [Russia](./countries/russia.md), [Ukraine](./countries/ukraine.md) | [`countries/`](./countries/) |
-| Asia-Pacific | [China](./countries/china.md), [Korea (North & South)](./countries/korea-north-and-south.md), [Japan](./countries/japan.md) | [`countries/`](./countries/) |
-| Middle East | [Israel](./countries/israel.md), [Iran](./countries/iran.md), [Saudi Arabia](./countries/saudi-arabia.md), [Turkey](./countries/turkey.md) | [`countries/`](./countries/) |
+| Asia-Pacific | [China](./countries/china.md), [Korea (North & South)](./countries/korea-north-and-south.md), [Japan](./countries/japan.md), [Indonesia](./countries/indonesia.md) | [`countries/`](./countries/) |
+| Middle East | [Israel](./countries/israel.md), [Iran](./countries/iran.md), [Saudi Arabia](./countries/saudi-arabia.md), [Turkey](./countries/turkey.md), [Egypt](./countries/egypt.md), [United Arab Emirates](./countries/united-arab-emirates.md) | [`countries/`](./countries/) |
 | Oceania | [Australia](./countries/australia.md) | [`countries/`](./countries/) |
+| South Asia | [India](./countries/india.md) | [`countries/`](./countries/) |
+| Africa | [Nigeria](./countries/nigeria.md), [South Africa](./countries/south-africa.md) | [`countries/`](./countries/) |
 
 ### Country research standards
 
