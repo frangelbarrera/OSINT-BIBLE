@@ -492,7 +492,7 @@ python3 gitgot.py -q "ORGNAME"
 8. **Social Finder** - Link: [Social Finder](https://socialfinder.app) - Description: A platform to search and discover social media profiles on various platforms.
 9. **SnapIntel** - Link: [SnapIntel](https://github.com/Kr0wZ/SnapIntel) - Description: a python tool providing you information about Snapchat users.
 10. **AddMeS** - Link: [AddMeS](https://addmes.io/) - Description: The 'Add Me' directory of Snapchat users on web.
-11. **SnapDataHub** - Link: [SnapDataHub](https://snapdatahub.com/) - Description: Subscriber counts, Spotlight views and growth for public Snapchat creator profiles, plus a daily list of the fastest-growing creators. Free to browse without login (influencer search is paid).
+11. **SnapDataHub** - Link: [SnapDataHub](https://snapdatahub.com/) - Description: Subscriber counts, Spotlight views and growth for public Snapchat creator profiles, plus a daily list of the fastest-growing creators. Analytics are derived from publicly available Snapchat data; earnings figures are estimates, not official Snapchat data. Free to browse without login (influencer search is paid).
 
 ### 5.9 WhatsApp
 1. **checkwa** - Link: [checkwa](https://checkwa.online) - Description: An online tool to check the status and availability of WhatsApp numbers.
