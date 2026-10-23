@@ -1,12 +1,12 @@
 # scripts
 
 Command-line utilities for working with the collection in this repository.
-No API keys are required and the only external dependency is `requests`.
+No API keys are required for the local utilities. Install the development dependencies from `requirements-dev.txt`; the link and username checks use `requests`, while data validation and README generation also use YAML/JSON-schema dependencies.
 
 ## Installation
 
 ```bash
-python3 -m pip install requests
+python3 -m pip install -r requirements-dev.txt
 ```
 
 ## Scripts
@@ -21,6 +21,7 @@ python3 -m pip install requests
 
 ```bash
 python3 scripts/link_checker.py README.md audit/links-status.csv --all
+python3 scripts/link_checker.py --repo audit/links-status.csv --all
 python3 scripts/dork_builder.py --domain example.com --output all
 python3 scripts/username_check.py torvalds --platforms github,keybase
 ```
@@ -31,6 +32,7 @@ python3 scripts/username_check.py torvalds --platforms github,keybase
 - Pass `--dry-run` to the link checker or username checker to list targets without making requests. `dork_builder.py` never makes requests; it only renders text.
 - If no output path is given, `link_checker.py` writes nothing to disk; it only prints the summary.
 - By default, the link-checker CSV contains only non-`OK` rows. Pass `--all` to include every unique URL, as used by the reports in `audit/`.
+- Pass `--repo` to audit the README, all country Markdown files, documentation and this scripts guide in one run. The CSV records the first source file and line for each URL.
 - `BLOCKED` results (`400`, `401`, `403`, `406`, `412`, `429`, `444`) usually indicate a WAF, geo-restriction or login wall. They are not automatically dead links and should be confirmed in a browser.
 - `NO_RESPONSE` means the request could not be completed. Retry before changing or removing a link.
 - `username_check.py` reports `UNKNOWN` when a platform blocks automated access. `FOUND` only means that the profile route responded; it does not confirm account ownership.

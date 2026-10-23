@@ -34,13 +34,13 @@ note.
 
 | Register | URL | Coverage | Access |
 |---|---|---|---|
-| Example register | https://example.org/ubo | Replace with the verified public register | live / blocked / unverified |
+| Example register | https://example.org/ | Replace with the verified public register | live / blocked / unverified |
 
 #### Public Procurement & Tendering
 
 | Portal | URL | Scope | Access |
 |---|---|---|---|
-| Example portal | https://example.org/procurement | Replace with the verified public procurement portal | live / blocked / unverified |
+| Example portal | https://example.org/ | Replace with the verified public procurement portal | live / blocked / unverified |
 
 #### Notable Cases
 
