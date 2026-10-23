@@ -1780,6 +1780,14 @@ cd osint-agent-skills
 | Mullvad Browser | https://mullvad.net/en/browser | Anti-fingerprinting browser (Tor Project + Mullvad VPN) |
 | LibreWolf | https://librewolf.net | Hardened Firefox for privacy |
 | Whonix | https://www.whonix.org | Two-VM Tor workstation |
+| Spoof Me | https://spoof-me.com | Chrome/Firefox extension that sets user agent, language, timezone, screen and WebGL values per profile and lists the fingerprinting APIs a page calls |
+
+**Spoof Me: permissions, data and limitations:**
+- **Permissions.** Access to all sites, so it can rewrite request headers and page APIs before page scripts run. Also storage, privacy (WebRTC IP policy), browsingData (per-site reset button only), alarms and activeTab.
+- **Data.** Settings stay in the browser; no account, no analytics. Optional Chameleon mode (off by default) looks up your public IP's country through seven public geolocation services, which see that IP.
+- **Limitations.** It does not change your IP address or geolocation, and tests such as CreepJS can detect the overridden APIs.
+- **Not anonymity.** Fingerprint spoofing changes how the browser presents itself; it does not make you anonymous. Use it only within an authorized OPSEC workflow (37.2), not as a replacement for Tor, Mullvad Browser or Whonix.
+- **References.** Permissions as listed by the stores: [Chrome Web Store](https://chromewebstore.google.com/detail/spoof-me/onbjkmhileedchimkcmieeiomipdljki), [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/spoof-me/permissions/). Closed source; no independent audit.
 
 ### 37.2 Pre-Investigation OPSEC Workflow — 10 Steps
 
