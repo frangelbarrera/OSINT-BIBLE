@@ -1502,6 +1502,7 @@ site:*.*.target.com
 | **EDGAR** | SEC filings | https://www.sec.gov/edgar |
 | **OpenCorporates** | Global company registry | https://opencorporates.com |
 | **Company House** | UK company registry | https://find-and-update.company-information.service.gov.uk |
+| **Auregistre** | French company timeline (BODACC + Sirene): officers, changes, insolvencies; free API and MCP | https://auregistre.fr |
 | **china-usci** | Offline JavaScript/CLI format and checksum checks for mainland China's 18-character USCI (MIT-licensed package); passing does not prove correct transcription, registration, creditworthiness, ownership, or payment safety. | [Source](https://github.com/zbl1998-sdjn/china-usci) · [Related browser checker](https://currawongweb.com/verify/china-usci-checker/) |
 | **Bloomberg** | Financial data | https://www.bloomberg.com |
 
