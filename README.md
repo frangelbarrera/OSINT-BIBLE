@@ -350,6 +350,7 @@ graph TD
 19. **Sentiment140** - Link: [Sentiment140](http://sentiment140.com) - Description: Bulk sentiment analysis for tweets via CSV.
 20. **Xquik** - Link: [Xquik](https://xquik.com) - Description: 122 API endpoints for search, user, post and monitor. API key, USD 0.00015/read.
 21. **TwiFlux** - Link: [TwiFlux](https://twiflux.com) - A collection of browser-based tools for Twitter/X, including video, image, tweet and thread downloaders, format converters, search tools, and other utilities. 
+22. **TweetAPI** - Link: [TweetAPI](https://tweetapi.com) - Description: Twitter data API for tweet search, profiles, followers, lists, communities and Spaces. API key, pay as you go, 100 free requests.
 
 ### 5.5 Pinterest
 1. **DownAlbum** - Link: [DownAlbum](https://chromewebstore.google.com/detail/downalbum/cgjnhhjpfcdhbhlcmmjppicjmgfkppok) - Description: Google Chrome extension for downloading albums of photos from various websites, including Pinterest.
