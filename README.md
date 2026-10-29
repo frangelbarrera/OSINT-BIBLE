@@ -1735,6 +1735,7 @@ cd osint-agent-skills
 | Arbiscan | https://arbiscan.io | Arbitrum L2 explorer |
 | Basescan | https://basescan.org | Base L2 explorer |
 | Optimistic Etherscan | https://optimistic.etherscan.io | Optimism L2 explorer |
+| Insider Express (Canada) | https://insiderexpress.ca | SEDI insider trades, MP/senator disclosed holdings, lobbying, political donations, federal contracts and grants |
 
 ### 36.3 Common Errors in Financial OSINT
 
