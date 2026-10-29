@@ -1153,6 +1153,7 @@ sudo systemctl restart piaware
 | **HyperVerge Deepfake Detector** | AI detection | https://hyperverge.co | API |
 | **Sensity AI** | Deepfakes detection | https://sensity.ai | Professional |
 | **Content Authenticity Initiative** | Origin verification | https://contentauthenticity.org | Standard |
+| **Archivarix Retrace** | Image origin: earlier copies, first-seen date and likely location, each with a source link | https://retrace.archivarix.net | Web |
 
 **Verification process:**
 ```
