@@ -543,6 +543,7 @@ python3 gitgot.py -q "ORGNAME"
 9. **Similarfans** - Link: [Similarfans](https://similarfans.com/) - Description: Blog for OnlyFans content creators.
 10. **Fansearch** - Link: [Fansearch](https://www.fansearch.com/) - Description: Fansearch is the best OnlyFans Finder to search in 3,000,000 OnlyFans Accounts.
 11. **OnlyFans Finders** - Link: [OnlyFans Finders](https://onlyfansfinders.com/) - Description: Free search of public OnlyFans profiles (published by the creators themselves) by city, category and price; profiles re-checked against OnlyFans monthly. No private or leaked content. Removal: [privacy policy](https://onlyfansfinders.com/privacy.html#removal).
+12. **TastyFans** - Link: [TastyFans](https://tastyfans.com/) - Description: Search public OnlyFans and Fansly creator profiles by name, niche, price and location, with natural-language queries. Public profile data only; creators can edit or remove their listing.
 
 ### 5.14 TikTok
 1. **Mavekite** - Link: [Mavekite](https://mavekite.com/) - Description: Search the profile using username.
