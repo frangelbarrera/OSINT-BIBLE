@@ -1073,6 +1073,7 @@ h8mail -t targets.txt -bc local_breach_folder/ --power-all
 | **Etherscan** | Ethereum | https://etherscan.io | Main explorer |
 | **Blockchain.info** | Bitcoin | https://www.blockchain.com/explorer | Classic explorer |
 | **BlockCypher** | Multi-chain API | https://www.blockcypher.com | Free API |
+| **SoChain** | Bitcoin, Litecoin, Dogecoin, Zcash | https://sochain.com | Explorer and free keyless API |
 | **Wallet Explorer** | Bitcoin | https://www.walletexplorer.com | Wallet analysis |
 
 **Investigation methodology:**
