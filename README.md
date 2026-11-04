@@ -522,7 +522,7 @@ python3 gitgot.py -q "ORGNAME"
 14. **Tgram.io** - Link: [Tgram.io](https://tgram.io) - Description: A platform to explore and search for Telegram channels, groups, and bots.
 15. **Tgstat.com** - Link: [Tgstat.com](https://tgstat.com) - Description: A comprehensive platform for analyzing and tracking Telegram channels and groups.
 16. **Tgstat RU** - Link: [Tgstat RU](https://tgstat.ru) - Description: A Russian platform for analyzing and monitoring Telegram channels and groups.
-17. **TGScope** - Link: [TGScope](https://tgscope.io) - Description: Directory and search of public Telegram channels by topic and language, with per-channel pages and monthly pages that compile public posts mentioning a person, place or organization. Channel figures are estimates derived from publicly visible channel data.
+17. **TGScope** - Link: [TGScope](https://tgscope.io) - Description: Directory and search of public Telegram channels by topic and language, with per-channel pages and monthly pages that compile publicly visible posts mentioning a person, place or organization. Channel figures are estimates derived from public data.
 18. **TGScope Channel Creation Date** - Link: [TGScope Channel Creation Date](https://tgscope.io/tools/telegram-channel-creation-date) - Description: Estimates the period in which a Telegram channel or supergroup was created from its username, t.me link or numeric ID, based on the ID ranges Telegram assigned over time. The result is an approximate period, not an exact date ([method and validation](https://tgscope.io/rnd/telegram-channel-id-clock)).
 19. **TGScope Channel Network Checker** - Link: [TGScope Channel Network Checker](https://tgscope.io/tools/telegram-channel-network) - Description: Lists other public Telegram channels whose descriptions give the same advertising contact as a given channel. A shared contact indicates a common ad seller or agency, not confirmed ownership ([method](https://tgscope.io/rnd/telegram-channel-networks)).
 20. **TGScope Channel Audit** - Link: [TGScope Channel Audit](https://tgscope.io/tools/telegram-channel-audit) - Description: Compares a channel's average post views with its subscriber count and with channels of similar size, language and topic in the TGScope dataset. Figures are estimates from publicly visible view and subscriber counts ([method](https://tgscope.io/rnd/telegram-channel-reach)).
@@ -1077,7 +1077,7 @@ h8mail -t targets.txt -bc local_breach_folder/ --power-all
 | **Etherscan** | Ethereum | https://etherscan.io | Main explorer |
 | **Blockchain.info** | Bitcoin | https://www.blockchain.com/explorer | Classic explorer |
 | **BlockCypher** | Multi-chain API | https://www.blockcypher.com | Free API |
-| **SoChain** | Bitcoin, Litecoin, Dogecoin, Zcash | https://sochain.com | Explorer and free keyless API |
+| **SoChain** | Bitcoin, Litecoin, Dogecoin, Zcash | https://sochain.com | Explorer and public API examples; access, limits and key requirements may vary |
 | **Wallet Explorer** | Bitcoin | https://www.walletexplorer.com | Wallet analysis |
 
 **Investigation methodology:**
@@ -1580,9 +1580,9 @@ site:*.*.target.com
 ### 33.6 Internet Cyber Health Indexes
 | Feed | Type | URL |
 |---|---|---|
-| **ICHI — Internet Cyber Health Index** | Daily cyber health barometer | https://ichi.global |
+| **ICHI — Internet Cyber Health Index** | Daily cyber health barometer; see [methodology](https://ichi.global/methodology) and limitations | https://ichi.global |
 
-> ICHI is a free, source-transparent daily barometer of internet cyber health. It aggregates signals from multiple public sources across threat feeds, vulnerability databases, and network monitoring services into a daily health score. ICHI provides a directional, outside-in signal — not a predictive forecast or objective measure of global cyber risk. Disclosure: submitted by an automated assistant on behalf of the creator/maintainer.
+> ICHI is a free, source-transparent daily barometer of internet cyber health. It aggregates signals from multiple public sources across threat feeds, vulnerability databases, and network monitoring services into a daily health score. ICHI provides a directional, outside-in signal — not a predictive forecast or objective measure of global cyber risk, and it does not replace organization-specific telemetry or risk assessment. Disclosure: submitted by an automated assistant on behalf of the creator/maintainer.
 
 ## 34. ICS/OT & Critical-Infrastructure OSINT
 
