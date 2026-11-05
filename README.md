@@ -680,6 +680,7 @@ Following the withdrawal of Russian troops from Bucha (Ukraine) in March 2022, i
 |---|---|---|
 | Subdomains | Amass | `amass enum -d target.com -o subs.txt` |
 | Certificates | CRT.sh | `curl https://crt.sh/?q=%25.target.com&output=json` |
+| Lookalike domains | [NetAPI](https://netapi.com/) | `curl "https://netapi.com/api-json/?method=search-new&q=target&days=7"` |
 | Historical DNS | [SecurityTrails](https://securitytrails.com) | Historical DNS service; current access limits vary |
 | Tech stack | [StackScan](https://www.stackscan.com) | Reverse lookup by technology; current coverage varies |
 | Tech stack | [looot-techstack](https://github.com/loootai/looot-techstack) | Self-hosted (MIT), reverse lookup by technology; paid looot API may be available |
