@@ -312,6 +312,7 @@ graph TD
 10. **Find Instagram User Id** - Link: [Find Instagram User Id](https://www.codeofaninja.com/tools/find-instagram-user-id/) - Description: This tool called "Find Instagram User ID" provides an easy way for developers and designers to get Instagram account numeric ID by username.
 11. **Instahunt** - Link: [Instahunt](https://instahunt.huntintel.io/) - Description: Easily find social media posts surrounding a location.
 12. **Musicaldown** - Link: [Musicaldown](https://musicaldown.com) - Description: web.
+13. **IGDataHub** - Link: [IGDataHub](https://igdatahub.com/) - Description: Follower count history for the public Instagram accounts it tracks, built from its own repeated readings and shown as a growth chart on each profile report, plus engagement rate and top posts per profile and weekly follower-growth rankings. Coverage depends on publicly available Instagram data and on the service's current accessibility. The free lookup and reports need no login; the full per-reading CSV export is paid.
 
 ### 5.3 LinkedIn
 1. **RecruitEm** - Link: [RecruitEm](https://recruitin.net/) - Description: Allows you to search social media profiles. It helps recruiters to create a Google boolean string that searches all public profiles.
