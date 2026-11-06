@@ -1153,6 +1153,7 @@ sudo systemctl restart piaware
 | Tool | Function | URL | Type |
 |---|---|---|---|
 | **InVID & WeVerify** | Video verification plugin | https://weverify.eu/verification-plugin | Extension |
+| **Reverse Image Search Anywhere** | Compare page images across Google Lens, Yandex, Bing and TinEye, including images without usable URLs | https://reverseimage.app/ | Browser extension / Web |
 | **FotoForensics** | ELA image analysis | https://fotoforensics.com | Web |
 | **Forensically** | Visual analysis suite | https://29a.ch/photo-forensics | Web |
 | **HyperVerge Deepfake Detector** | AI detection | https://hyperverge.co | API |
