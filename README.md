@@ -1557,6 +1557,7 @@ site:*.*.target.com
 | **CINS Score** | Botnet IPs | http://cinsscore.com/#list |
 | **Binary Defense** | Banlist | https://www.binarydefense.com/banlist.txt |
 | **IPsum** | Curated IPs | https://raw.githubusercontent.com/stamparm/ipsum/master/ipsum.txt |
+| **Whatoblock** | Honeypot-observed attacker IPs & blocklists | https://whatoblock.com |
 
 ### 33.4 CTI Platforms (ingest & correlate)
 | Platform | Type | URL |
