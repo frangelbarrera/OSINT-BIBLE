@@ -260,6 +260,7 @@ graph TD
 - [Evidence preservation workflow](docs/evidence-preservation.md) → synthetic manifest and chain-of-custody checklist
 - [CachedView](https://cachedview.com) (Google + Archive.is)
 - [URLScan](https://urlscan.io) → capture + DOM + requests
+- [ScanMalware](https://scanmalware.com) → free URL scanner: screenshot, page HTML and requests captured in isolated analysis environments; phishing/malware verdict, with AI review of suspicious pages naming the scam type and impersonated brand; public scans searchable by domain, IP, ASN, JARM or favicon hash
 - [Ubikron](https://ubikron.com ) → AI-powered evidence collection & entity extraction
 - [TrueScreen Forensic Browser](https://truescreen.io/forensic-browser/) → certified capture of web pages and browsing sessions (macOS, Windows)
 - [Screenshot Guru](https://screenshot.guru) → screen test
