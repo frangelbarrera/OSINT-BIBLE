@@ -1828,6 +1828,7 @@ cd osint-agent-skills
 | Tor Project | https://www.torproject.org | Network anonymity |
 | Snowflake | https://snowflake.torproject.org | WebRTC pluggable transport |
 | obfs4 bridges | https://bridges.torproject.org | Anti-censorship Tor bridges |
+| anon.li | https://anon.li | Email aliases that forward to your real inbox, so each research account can use its own address; open source (AGPL-3.0) |
 
 ---
 
