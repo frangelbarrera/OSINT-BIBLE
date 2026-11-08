@@ -174,6 +174,7 @@ graph TD
 - [SciHub](https://sci-hub.ru) → access to scientific papers
 - [ResearchHub](https://www.researchhub.com) → research discussion
 - [IDCrawl](https://www.idcrawl.com) → people search
+- [DeepSearch](https://deepsearch.tools/) → people search with limited free candidate previews; full reports are paid
 - [Osint Industries](https://osint.industries) → email/phone search
 - [ESPY](https://espysys.com/) → phone search
 - [SUNDERS](https://sunders.uber.space) → surveillance cameras
