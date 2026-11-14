@@ -2057,6 +2057,7 @@ site:amazonaws.com filetype:pdf "confidential"
 | C2PA open-source SDK | https://opensource.contentauthenticity.org | Open-source Content Credentials tooling |
 | SynthID Text | https://github.com/google-deepmind/synthid-text | Text watermarking reference implementation |
 | TrueScreen C2PA Viewer | https://truescreen.io/c2pa-viewer/ | Reads and checks C2PA manifests in the browser, no upload or account |
+| AI Image Detection | https://aiimagedetection.app | Checks if an image is likely AI-generated: reads C2PA Content Credentials and metadata first, then a detection model; answers Likely AI / Likely real / Can't tell / Edited with AI with reasons; 3 free checks a day, no account |
 
 ### 44.2 Layered Verification Methodology
 
