@@ -655,6 +655,7 @@ exiftool -all= foto_sanitizada.jpg
 | Sentinel Hub | https://www.sentinel-hub.com | Sentinel-2 imagery |
 | yt-dlp | https://github.com/yt-dlp/yt-dlp | Video download |
 | GeoConfirmed | https://geoconfirmed.org | Collaborative geolocation |
+| Video Reverse Search | https://videoreversesearch.com/ | Search clip frames for matching pages and compare publication dates |
 
 #### 6.4.4 Real Case — Bellingcat Bucha 2022
 
