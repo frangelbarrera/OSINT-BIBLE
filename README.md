@@ -174,7 +174,7 @@ graph TD
 - [SciHub](https://sci-hub.ru) → access to scientific papers
 - [ResearchHub](https://www.researchhub.com) → research discussion
 - [IDCrawl](https://www.idcrawl.com) → people search
-- [DeepSearch](https://deepsearch.tools/) → people search with limited free candidate previews; full reports are paid
+- [DeepSearch](https://deepsearch.tools/) → people search with limited free candidate previews; paid plans unlock additional report details; verify candidate matches independently
 - [Osint Industries](https://osint.industries) → email/phone search
 - [ESPY](https://espysys.com/) → phone search
 - [SUNDERS](https://sunders.uber.space) → surveillance cameras
@@ -263,7 +263,7 @@ graph TD
 - [URLScan](https://urlscan.io) → capture + DOM + requests
 - [Ubikron](https://ubikron.com ) → AI-powered evidence collection & entity extraction
 - [TrueScreen Forensic Browser](https://truescreen.io/forensic-browser/) → certified capture of web pages and browsing sessions (macOS, Windows)
-- [CurlShot](https://curlshot.com/) → hosted screenshot API: full-page PNG/JPEG/WebP, PDF or scrolling video of a URL (requires an API access key; free tier limited to 100 captures/month; not a certified forensic capture tool)
+- [CurlShot](https://curlshot.com/) → hosted screenshot service/API: full-page PNG/JPEG/WebP, PDF or scrolling video of a URL (the web tool can be used without an account; API requests require an access key; free plan includes 100 screenshots/month; not described by the provider as a certified forensic capture tool)
 - [Screenshot Guru](https://screenshot.guru) → screen test
 - [Stored Website](https://stored.website) → cached pages
 - [YARAify](https://yaraify.abuse.ch) → YARA rules
@@ -659,7 +659,7 @@ exiftool -all= foto_sanitizada.jpg
 | Sentinel Hub | https://www.sentinel-hub.com | Sentinel-2 imagery |
 | yt-dlp | https://github.com/yt-dlp/yt-dlp | Video download |
 | GeoConfirmed | https://geoconfirmed.org | Collaborative geolocation |
-| Video Reverse Search | https://videoreversesearch.com/ | Search clip frames for matching pages and compare publication dates |
+| Video Reverse Search | https://videoreversesearch.com/ | Search selected video frames for matching public pages; compare platform dates as leads, not proof of origin |
 
 #### 6.4.4 Real Case — Bellingcat Bucha 2022
 
@@ -1165,7 +1165,7 @@ sudo systemctl restart piaware
 | **HyperVerge Deepfake Detector** | AI detection | https://hyperverge.co | API |
 | **Sensity AI** | Deepfakes detection | https://sensity.ai | Professional |
 | **Content Authenticity Initiative** | Origin verification | https://contentauthenticity.org | Standard |
-| **Archivarix Retrace** | Image origin: earlier copies, first-seen date and likely location, each with a source link | https://retrace.archivarix.net | Web |
+| **Archivarix Retrace** | Image provenance: earlier copies, earliest known appearance date when sources permit, and map location when available; each finding links to its source | https://retrace.archivarix.net | Web |
 
 **Verification process:**
 ```
@@ -1566,7 +1566,7 @@ site:*.*.target.com
 | **CINS Score** | Botnet IPs | http://cinsscore.com/#list |
 | **Binary Defense** | Banlist | https://www.binarydefense.com/banlist.txt |
 | **IPsum** | Curated IPs | https://raw.githubusercontent.com/stamparm/ipsum/master/ipsum.txt |
-| **Whatoblock** | Honeypot-observed attacker IPs & blocklists | https://whatoblock.com |
+| **Whatoblock** | Honeypot-observed source IPs, threat intelligence & blocklists; observations do not establish identity or intent | https://whatoblock.com |
 
 ### 33.4 CTI Platforms (ingest & correlate)
 | Platform | Type | URL |
