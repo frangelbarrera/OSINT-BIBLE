@@ -261,7 +261,7 @@ graph TD
 - [Evidence preservation workflow](docs/evidence-preservation.md) → synthetic manifest and chain-of-custody checklist
 - [CachedView](https://cachedview.com) (Google + Archive.is)
 - [URLScan](https://urlscan.io) → capture + DOM + requests
-- [ScanMalware](https://scanmalware.com) → free URL scanner: screenshot, page HTML and requests captured in isolated analysis environments; phishing/malware verdict, with AI review of suspicious pages naming the scam type and impersonated brand; public scans searchable by domain, IP, ASN, JARM or favicon hash
+- [ScanMalware](https://scanmalware.com) → free URL scanner: captures screenshots, page HTML and requests during analysis; phishing/malware verdict with AI review; public scans searchable by domain, IP, ASN, JARM or favicon hash; public scans may expose submitted URLs and captured artifacts
 - [Ubikron](https://ubikron.com ) → AI-powered evidence collection & entity extraction
 - [TrueScreen Forensic Browser](https://truescreen.io/forensic-browser/) → certified capture of web pages and browsing sessions (macOS, Windows)
 - [CurlShot](https://curlshot.com/) → hosted screenshot service/API: full-page PNG/JPEG/WebP, PDF or scrolling video of a URL (the web tool can be used without an account; API requests require an access key; free plan includes 100 screenshots/month; not described by the provider as a certified forensic capture tool)
@@ -354,7 +354,7 @@ graph TD
 19. **Sentiment140** - Link: [Sentiment140](http://sentiment140.com) - Description: Bulk sentiment analysis for tweets via CSV.
 20. **Xquik** - Link: [Xquik](https://xquik.com) - Description: 122 API endpoints for search, user, post and monitor. API key, USD 0.00015/read.
 21. **TwiFlux** - Link: [TwiFlux](https://twiflux.com) - A collection of browser-based tools for Twitter/X, including video, image, tweet and thread downloaders, format converters, search tools, and other utilities. 
-22. **TweetAPI** - Link: [TweetAPI](https://tweetapi.com) - Description: Twitter data API for tweet search, profiles, followers, lists, communities and Spaces. API key, pay as you go, 100 free requests.
+22. **TweetAPI** - Link: [TweetAPI](https://tweetapi.com) - Description: Independent Twitter/X data API for tweet search, profiles, followers, lists, communities and Spaces. API key, pay as you go, 100 free API units.
 
 ### 5.5 Pinterest
 1. **DownAlbum** - Link: [DownAlbum](https://chromewebstore.google.com/detail/downalbum/cgjnhhjpfcdhbhlcmmjppicjmgfkppok) - Description: Google Chrome extension for downloading albums of photos from various websites, including Pinterest.
@@ -553,7 +553,7 @@ python3 gitgot.py -q "ORGNAME"
 9. **Similarfans** - Link: [Similarfans](https://similarfans.com/) - Description: Blog for OnlyFans content creators.
 10. **Fansearch** - Link: [Fansearch](https://www.fansearch.com/) - Description: Fansearch is the best OnlyFans Finder to search in 3,000,000 OnlyFans Accounts.
 11. **OnlyFans Finders** - Link: [OnlyFans Finders](https://onlyfansfinders.com/) - Description: Free search of public OnlyFans profiles (published by the creators themselves) by city, category and price; profiles re-checked against OnlyFans monthly. No private or leaked content. Removal: [privacy policy](https://onlyfansfinders.com/privacy.html#removal).
-12. **HornyIndex** - Link: [HornyIndex](https://hornyindex.com/) - Description: Search public OnlyFans and Fansly creator profiles by name, niche, price and location, with natural-language queries. Public profile data only; creators can edit or remove their listing.
+12. **HornyIndex** - Link: [HornyIndex](https://hornyindex.com/) - Description: Adult-only independent search of public OnlyFans and Fansly creator profiles by name, niche, price and location, with natural-language queries. Public profile data only; claimed creators can edit their listing and any creator can [request removal](https://hornyindex.com/remove).
 
 ### 5.14 TikTok
 1. **Mavekite** - Link: [Mavekite](https://mavekite.com/) - Description: Search the profile using username.
@@ -1760,7 +1760,7 @@ cd osint-agent-skills
 | Arbiscan | https://arbiscan.io | Arbitrum L2 explorer |
 | Basescan | https://basescan.org | Base L2 explorer |
 | Optimistic Etherscan | https://optimistic.etherscan.io | Optimism L2 explorer |
-| Insider Express (Canada) | https://insiderexpress.ca | SEDI insider trades, MP/senator disclosed holdings, lobbying, political donations, federal contracts and grants |
+| Insider Express (Canada) | https://insiderexpress.ca | Independent aggregator of Canadian public records: SEDI insider trades, MP/senator disclosed holdings, lobbying, political donations, federal contracts and grants; verify against primary sources |
 
 ### 36.3 Common Errors in Financial OSINT
 
@@ -1810,10 +1810,10 @@ cd osint-agent-skills
 
 **Spoof Me: permissions, data and limitations:**
 - **Permissions.** Access to all sites, so it can rewrite request headers and page APIs before page scripts run. Also storage, privacy (WebRTC IP policy), browsingData (per-site reset button only), alarms and activeTab.
-- **Data.** Settings stay in the browser; no account, no analytics. Optional Chameleon mode (off by default) looks up your public IP's country through seven public geolocation services, which see that IP.
-- **Limitations.** It does not change your IP address or geolocation, and tests such as CreepJS can detect the overridden APIs.
+- **Data.** Settings stay in the browser; no account, no analytics. Optional Chameleon mode is off by default and detects the VPN-exit country; review the current privacy policy before enabling it.
+- **Limitations.** It does not change your IP address or geolocation, and fingerprinting tests may still detect overridden APIs.
 - **Not anonymity.** Fingerprint spoofing changes how the browser presents itself; it does not make you anonymous. Use it only within an authorized OPSEC workflow (37.2), not as a replacement for Tor, Mullvad Browser or Whonix.
-- **References.** Permissions as listed by the stores: [Chrome Web Store](https://chromewebstore.google.com/detail/spoof-me/onbjkmhileedchimkcmieeiomipdljki), [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/spoof-me/permissions/). Closed source; no independent audit.
+- **References.** Permissions: [Chrome Web Store](https://chromewebstore.google.com/detail/spoof-me/onbjkmhileedchimkcmieeiomipdljki), [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/spoof-me/permissions/). Also review the [privacy policy](https://spoof-me.com/privacy-policy) and the vendor-linked [security review](https://audits.blockhacks.io/audit/spoof-me-extension-for-privacy); neither establishes anonymity or complete security.
 
 ### 37.2 Pre-Investigation OPSEC Workflow — 10 Steps
 
@@ -2079,7 +2079,7 @@ site:amazonaws.com filetype:pdf "confidential"
 | C2PA open-source SDK | https://opensource.contentauthenticity.org | Open-source Content Credentials tooling |
 | SynthID Text | https://github.com/google-deepmind/synthid-text | Text watermarking reference implementation |
 | TrueScreen C2PA Viewer | https://truescreen.io/c2pa-viewer/ | Reads and checks C2PA manifests in the browser, no upload or account |
-| AI Image Detection | https://aiimagedetection.app | Checks if an image is likely AI-generated: reads C2PA Content Credentials and metadata first, then a detection model; answers Likely AI / Likely real / Can't tell / Edited with AI with reasons; 3 free checks a day, no account |
+| AI Image Detection | https://aiimagedetection.app | Checks if an image is likely AI-generated: reads C2PA Content Credentials and metadata first, then a detection model; answers Likely AI / Likely real / Can't tell / Edited with AI with reasons; limited free checks, no account; results are estimates, not proof |
 
 ### 44.2 Layered Verification Methodology
 
