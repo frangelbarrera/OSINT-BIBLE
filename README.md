@@ -262,6 +262,7 @@ graph TD
 - [URLScan](https://urlscan.io) → capture + DOM + requests
 - [Ubikron](https://ubikron.com ) → AI-powered evidence collection & entity extraction
 - [TrueScreen Forensic Browser](https://truescreen.io/forensic-browser/) → certified capture of web pages and browsing sessions (macOS, Windows)
+- [CurlShot](https://curlshot.com/) → hosted screenshot API: full-page PNG/JPEG/WebP, PDF or scrolling video of a URL (requires an API access key; free tier limited to 100 captures/month; not a certified forensic capture tool)
 - [Screenshot Guru](https://screenshot.guru) → screen test
 - [Stored Website](https://stored.website) → cached pages
 - [YARAify](https://yaraify.abuse.ch) → YARA rules
