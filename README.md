@@ -317,6 +317,8 @@ graph TD
 12. **Musicaldown** - Link: [Musicaldown](https://musicaldown.com) - Description: web.
 13. **IGDataHub** - Link: [IGDataHub](https://igdatahub.com/) - Description: Follower count history for the public Instagram accounts it tracks, built from repeated readings and shown as a growth chart on each profile report, plus engagement rate and top posts per profile and weekly follower-growth rankings. Coverage depends on publicly available Instagram data and the service's current accessibility. The free lookup and reports need no login; the full per-reading CSV export is paid.
 
+14. **Stories Download** - Link: [Stories Download](https://storiesdownload.com/) - Description: Free Instagram Story downloader. Public Reels and posts usually work in HD with no login and no watermark; Stories and highlights often need the visitor's own Instagram sign-in. Private, Close Friends, and expired Stories cannot be fetched.
+
 ### 5.3 LinkedIn
 1. **RecruitEm** - Link: [RecruitEm](https://recruitin.net/) - Description: Allows you to search social media profiles. It helps recruiters to create a Google boolean string that searches all public profiles.
 2. **RocketReach** - Link: [RocketReach](https://rocketreach.co/person) - Description: Allows you to programmatically search and lookup contact info over 700 million professionals and 35 million companies.
