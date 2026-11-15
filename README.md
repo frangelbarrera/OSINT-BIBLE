@@ -312,7 +312,7 @@ graph TD
 10. **Find Instagram User Id** - Link: [Find Instagram User Id](https://www.codeofaninja.com/tools/find-instagram-user-id/) - Description: This tool called "Find Instagram User ID" provides an easy way for developers and designers to get Instagram account numeric ID by username.
 11. **Instahunt** - Link: [Instahunt](https://instahunt.huntintel.io/) - Description: Easily find social media posts surrounding a location.
 12. **Musicaldown** - Link: [Musicaldown](https://musicaldown.com) - Description: web.
-13. **IGDataHub** - Link: [IGDataHub](https://igdatahub.com/) - Description: Follower count history for the public Instagram accounts it tracks, built from its own repeated readings and shown as a growth chart on each profile report, plus engagement rate and top posts per profile and weekly follower-growth rankings. Coverage depends on publicly available Instagram data and on the service's current accessibility. The free lookup and reports need no login; the full per-reading CSV export is paid.
+13. **IGDataHub** - Link: [IGDataHub](https://igdatahub.com/) - Description: Follower count history for the public Instagram accounts it tracks, built from repeated readings and shown as a growth chart on each profile report, plus engagement rate and top posts per profile and weekly follower-growth rankings. Coverage depends on publicly available Instagram data and the service's current accessibility. The free lookup and reports need no login; the full per-reading CSV export is paid.
 
 ### 5.3 LinkedIn
 1. **RecruitEm** - Link: [RecruitEm](https://recruitin.net/) - Description: Allows you to search social media profiles. It helps recruiters to create a Google boolean string that searches all public profiles.
@@ -493,7 +493,7 @@ python3 gitgot.py -q "ORGNAME"
 8. **Social Finder** - Link: [Social Finder](https://socialfinder.app) - Description: A platform to search and discover social media profiles on various platforms.
 9. **SnapIntel** - Link: [SnapIntel](https://github.com/Kr0wZ/SnapIntel) - Description: a python tool providing you information about Snapchat users.
 10. **AddMeS** - Link: [AddMeS](https://addmes.io/) - Description: The 'Add Me' directory of Snapchat users on web.
-11. **SnapDataHub** - Link: [SnapDataHub](https://snapdatahub.com/) - Description: Subscriber counts, Spotlight views and growth for public Snapchat creator profiles, plus a daily list of the fastest-growing creators. Analytics are derived from publicly available Snapchat data; earnings figures are estimates, not official Snapchat data. Free to browse without login (influencer search is paid).
+11. **SnapDataHub** - Link: [SnapDataHub](https://snapdatahub.com/) - Description: Subscriber counts, Spotlight views and growth for public Snapchat creator profiles, plus a ranked list of fastest-growing creators. Analytics are derived from publicly available Snapchat data; earnings figures are estimates, not official Snapchat data. Public profile pages are viewable without login; full influencer-search results are paid.
 
 ### 5.9 WhatsApp
 1. **checkwa** - Link: [checkwa](https://checkwa.online) - Description: An online tool to check the status and availability of WhatsApp numbers.
@@ -682,7 +682,7 @@ Following the withdrawal of Russian troops from Bucha (Ukraine) in March 2022, i
 |---|---|---|
 | Subdomains | Amass | `amass enum -d target.com -o subs.txt` |
 | Certificates | CRT.sh | `curl https://crt.sh/?q=%25.target.com&output=json` |
-| Lookalike domains | [NetAPI](https://netapi.com/) | `curl "https://netapi.com/api-json/?method=search-new&q=target&days=7"` |
+| Newly registered keyword-matching domains | [NetAPI](https://netapi.com/) | `curl "https://netapi.com/api-json/?method=search-new&q=target&days=7"` — validate results manually |
 | Historical DNS | [SecurityTrails](https://securitytrails.com) | Historical DNS service; current access limits vary |
 | Tech stack | [StackScan](https://www.stackscan.com) | Reverse lookup by technology; current coverage varies |
 | Tech stack | [looot-techstack](https://github.com/loootai/looot-techstack) | Self-hosted (MIT), reverse lookup by technology; paid looot API may be available |
@@ -1511,7 +1511,7 @@ site:*.*.target.com
 | **EDGAR** | SEC filings | https://www.sec.gov/edgar |
 | **OpenCorporates** | Global company registry | https://opencorporates.com |
 | **Company House** | UK company registry | https://find-and-update.company-information.service.gov.uk |
-| **Auregistre** | French company timeline (BODACC + Sirene): officers, changes, insolvencies; free API and MCP | https://auregistre.fr |
+| **Auregistre** | French company timeline using public BODACC and Sirene data: officers, changes and insolvencies; public API and MCP, subject to limits; not an official registry | https://auregistre.fr |
 | **china-usci** | Offline JavaScript/CLI format and checksum checks for mainland China's 18-character USCI (MIT-licensed package); passing does not prove correct transcription, registration, creditworthiness, ownership, or payment safety. | [Source](https://github.com/zbl1998-sdjn/china-usci) · [Related browser checker](https://currawongweb.com/verify/china-usci-checker/) |
 | **Bloomberg** | Financial data | https://www.bloomberg.com |
 
