@@ -1,4 +1,4 @@
-# 🕵️‍♂️ OSINT Bible 2026
+﻿# 🕵️‍♂️ OSINT Bible 2026
 > Compilation, procedures, tools and ethics for open source research
 [Link audit](audit/latest.md)
 [Command-line utilities](scripts/README.md) · [Link audit details](audit/latest.md)
