@@ -2080,6 +2080,7 @@ site:amazonaws.com filetype:pdf "confidential"
 | SynthID Text | https://github.com/google-deepmind/synthid-text | Text watermarking reference implementation |
 | TrueScreen C2PA Viewer | https://truescreen.io/c2pa-viewer/ | Reads and checks C2PA manifests in the browser, no upload or account |
 | AI Image Detection | https://aiimagedetection.app | Checks if an image is likely AI-generated: reads C2PA Content Credentials and metadata first, then a detection model; answers Likely AI / Likely real / Can't tell / Edited with AI with reasons; limited free checks, no account; results are estimates, not proof |
+| CheckThatPhoto | https://checkthatphoto.com/ | Checks an uploaded or linked photo for signs of AI generation and explains the result and its limitations |
 
 ### 44.2 Layered Verification Methodology
 
