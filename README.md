@@ -1520,6 +1520,7 @@ site:*.*.target.com
 | **Company House** | UK company registry | https://find-and-update.company-information.service.gov.uk |
 | **Auregistre** | French company timeline using public BODACC and Sirene data: officers, changes and insolvencies; public API and MCP, subject to limits; not an official registry | https://auregistre.fr |
 | **china-usci** | Offline JavaScript/CLI format and checksum checks for mainland China's 18-character USCI (MIT-licensed package); passing does not prove correct transcription, registration, creditworthiness, ownership, or payment safety. | [Source](https://github.com/zbl1998-sdjn/china-usci) · [Related browser checker](https://currawongweb.com/verify/china-usci-checker/) |
+| **Datacircle** | Benchmarks of people and company data APIs, with an open API (no key) at https://api.datacircle.dev/v1 | https://datacircle.dev |
 | **Bloomberg** | Financial data | https://www.bloomberg.com |
 
 ---
