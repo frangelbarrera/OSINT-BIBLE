@@ -357,7 +357,6 @@ graph TD
 22. **TweetAPI** - Link: [TweetAPI](https://tweetapi.com) - Description: Independent Twitter/X data API for tweet search, profiles, followers, lists, communities and Spaces. API key, pay as you go, 100 free API units.
 23. **Social Fetch** - Link: [Social Fetch](https://www.socialfetch.dev) - Description: API for public X (Twitter) profiles, posts and search results as JSON. The same API also covers TikTok, Instagram, YouTube, Reddit and LinkedIn. Pay as you go, 100 free credits on signup, no card.
 
-
 ### 5.5 Pinterest
 1. **DownAlbum** - Link: [DownAlbum](https://chromewebstore.google.com/detail/downalbum/cgjnhhjpfcdhbhlcmmjppicjmgfkppok) - Description: Google Chrome extension for downloading albums of photos from various websites, including Pinterest.
 2. **Experts PHP: Pinterest Photo Downloader** - Link: [Pinterest Photo Downloader](https://www.expertsphp.com/pinterest-photo-downloader.html) - Description: Website providing a tool to download photos from Pinterest.
