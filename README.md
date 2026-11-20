@@ -663,6 +663,7 @@ exiftool -all= foto_sanitizada.jpg
 | yt-dlp | https://github.com/yt-dlp/yt-dlp | Video download |
 | GeoConfirmed | https://geoconfirmed.org | Collaborative geolocation |
 | Video Reverse Search | https://videoreversesearch.com/ | Search selected video frames for matching public pages; compare platform dates as leads, not proof of origin |
+| GetYouTubeTranscript | https://getyoutubetranscript.com | YouTube captions as timestamped text (any caption language the video has), to search what was said and cite the second it was said; reads existing captions only |
 
 #### 6.4.4 Real Case — Bellingcat Bucha 2022
 
