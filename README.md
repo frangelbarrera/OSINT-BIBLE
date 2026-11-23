@@ -1064,6 +1064,8 @@ def check_email_accounts(email):
 | **Hudson Rock** | Infostealer intelligence | https://www.hudsonrock.com/threat-intelligence-cybercrime-tools | Free |
 | **LeakRadar** | Stealer-log and breach intelligence service; coverage varies | https://leakradar.io | Freemium |
 | **CheckLeaked** | Real-time email/username/phone/password search | https://checkleaked.cc | Freemium |
+| **Breach House** | Ransomware and breach listings, with source and discovery date; token-based API | https://breach.house | Freemium |
+| **Have I Been Ransomed?** | Emails, phones and domains in ransomware, stealer and breach leaks; web and API | https://haveibeenransom.com | Freemium |
 
 **Quick command:**
 ```bash
