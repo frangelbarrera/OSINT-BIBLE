@@ -583,6 +583,7 @@ exiftool -all= foto_sanitizada.jpg
 - [WiGLE](https://wigle.net) → geolocated WiFi database
 - [OpenCelliD](https://www.opencellid.org) → cell towers
 - [Broadcastify](https://www.broadcastify.com) → police audio
+- [H1DR4 Public Incident Map](https://h1dr4.dev/map) → browse reported incidents on a free map with approximate locations and open public case files with source-linked timelines
 - [AviationStack](https://aviationstack.com) → aviation API
 - [Labs TIB Geoestimation](https://labs.tib.eu/geoestimation) → geographic estimation
 - [Picarta](https://picarta.ai) → photo location prediction
