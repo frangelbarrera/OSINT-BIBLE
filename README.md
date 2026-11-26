@@ -688,7 +688,7 @@ Following the withdrawal of Russian troops from Bucha (Ukraine) in March 2022, i
 |---|---|---|
 | Subdomains | Amass | `amass enum -d target.com -o subs.txt` |
 | Certificates | CRT.sh | `curl https://crt.sh/?q=%25.target.com&output=json` |
-| Email DNS & SPF/DKIM/DMARC/DNSBL | [InboxShield](https://inbox-checker.appwrite.network) | `curl -fsSL https://inbox-checker.appwrite.network/cli.sh \| sh -s -- target.com` |
+| Email DNS & SPF/DKIM/DMARC/DNSBL | [InboxShield](https://inbox.shipbastion.com) | `curl -fsSL "https://inbox.shipbastion.com/api/free-audit?domain=target.com"` |
 | Newly registered keyword-matching domains | [NetAPI](https://netapi.com/) | `curl "https://netapi.com/api-json/?method=search-new&q=target&days=7"` — validate results manually |
 | Historical DNS | [SecurityTrails](https://securitytrails.com) | Historical DNS service; current access limits vary |
 | Tech stack | [StackScan](https://www.stackscan.com) | Reverse lookup by technology; current coverage varies |
