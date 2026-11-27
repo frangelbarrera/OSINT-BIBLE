@@ -389,6 +389,7 @@ graph TD
 26. **Universal Reddit Scraper (URS)** - Link: [Universal Reddit Scraper (URS)](https://github.com/JosephLai241/URS) - Description: Python-based tool for scraping Reddit data for analysis.
 27. **Vizit** - Link: [Vizit](https://redditstuff.github.io/sna/vizit) - Description: Visualize and analyze relationships between Reddit users and subreddits.
 28. **Wisdom of Reddit** - Link: [Wisdom of Reddit](https://wisdomofreddit.com) - Description: Curated collection of insightful quotes and comments from Reddit.
+29. **Groundsocial** - Link: [Groundsocial](https://groundsocial.dev/docs) - Description: API for public Reddit posts, comments, users and search in Reddit's own JSON shape (PRAW works by changing the base URL), plus X, TikTok, YouTube and 70+ more platforms; paid per call, 100 free credits.
 
 ### 5.7 Github Leak Detection
 1. **Awesome Lists** - Link: [Awesome Lists](https://awesomelists.calvinjeng.io/) - Description: A curated list of awesome lists for various programming languages, frameworks, and tools.
